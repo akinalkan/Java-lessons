@@ -1,3 +1,4 @@
+Git notlari
 git add -A
 git commit -m"day08"
 git push
