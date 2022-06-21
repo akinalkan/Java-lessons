@@ -1,6 +1,6 @@
 Git notlari
 git add -A
-git commit -m"day08"
+git commit -m"day08_ifStatements"
 git push
 
 

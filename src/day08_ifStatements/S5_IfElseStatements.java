@@ -1,4 +1,4 @@
-package day08;
+package day08_ifStatements;
 
 import java.util.Locale;
 import java.util.Scanner;
