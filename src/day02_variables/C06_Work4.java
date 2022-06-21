@@ -1,0 +1,11 @@
+package day02_variables;
+
+public class C06_Work4 {
+    public static void main(String[] args) {
+
+        char eleman='a';
+        System.out.println("char :"+eleman);
+
+
+    }
+}
