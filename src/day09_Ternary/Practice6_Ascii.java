@@ -1,6 +1,5 @@
-package day09;
+package day09_Ternary;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Practice6_Ascii {
