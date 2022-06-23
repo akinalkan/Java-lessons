@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Practice_String_Manupulation {
     public static void main(String[] args) {
-        Scanner scan=new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 
 
 
@@ -80,6 +80,25 @@ public class Practice_String_Manupulation {
         }
 
         */
+        /*
+        System.out.print("Lütfen bir cümle giriniz: ");
+        String cumle = scan.nextLine();
+        System.out.print("Lutfen bir kelime giriniz :");
+        String kelime = scan.next();
+
+        int ilkkelime = cumle.indexOf(kelime);
+        int tekrar = cumle.indexOf(kelime, ilkkelime + 1);
+
+        if (ilkkelime == -1) {
+            System.out.println("Girilen kelime cumlede kullanilmamis");
+
+        } else if (tekrar == -1) {
+            System.out.println("Girilen kelime cumlede 1 kere kullanilmis");
+        } else {
+            System.out.println("Girilen kelime cumlede 1'den fazla kullanilmis");
+        }
+
+         */
         /*String str = "Calisirsaniz, Java ogrenmek cok kolay";
         System.out.println("index sayısı: " + str.length());// 37
         System.out.println("a'nın son index'i: " + str.lastIndexOf('a'));// 35
@@ -127,6 +146,43 @@ public class Practice_String_Manupulation {
         }
 
          */
+
+        /*String str="Çalışırsanız, Java öğrenmek çok kolay";
+        System.out.println(str.endsWith("y"));//true
+        System.out.println(str.endsWith("t"));//false
+        System.out.println(str.endsWith("olay"));//true -->kelime de aratılabilir
+
+         */
+        /*String str="Çalışırsanız, Java öğrenmek çok kolay";
+        System.out.println(str.startsWith("Ç"));//true
+        System.out.println(str.startsWith("Çalış"));//true
+        System.out.println(str.startsWith("ş",4));//true
+        System.out.println(str.startsWith("Java",14));//true
+
+         */
+        /*String str="Çalışırsanız, Java öğrenmek çok kolay";
+        System.out.println(str.isEmpty());//false
+
+        String str2="";
+        System.out.println(str2.isEmpty());//true
+
+         */
+        /*String str="Java öğrenmek çok kolay";
+        System.out.println(str.replace("a","x"));
+        System.out.println(str.replace("Java","x"));
+        System.out.println(str.replace("a","xxx"));
+        System.out.println(str.replace("a",""));
+        System.out.println(str.replace('a','x'));
+
+         */
+        String str="Java'da rakamlar 1234567890";
+        System.out.println(str.replaceAll("a","*"));
+        System.out.println(str.replaceAll("\\s","*"));
+        System.out.println(str.replaceAll("\\S","*"));
+        System.out.println(str.replaceAll("\\w","*"));
+        System.out.println(str.replaceAll("\\W","*"));
+        System.out.println(str.replaceAll("\\d","*"));
+        System.out.println(str.replaceAll("\\D","*"));
 
 
 

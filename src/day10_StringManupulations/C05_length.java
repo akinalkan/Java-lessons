@@ -20,7 +20,7 @@ public class C05_length {
         String str3=null;// str3 'e bir değer atanmışmıdır? cvp:hayır
                         //null bu değer atamamayı işaret etmektedir
         System.out.println(str3.length());// bir değer atanmamış ki nasıl uzunluğu olsun
-                                        //.NullPointerException oalrak hata verir.
+                                        //NullPointerException olarak hata verir.
 
               //null bir esitligin karsinda olsa bile bu bir atama degildir
             //esitligin karsisina null yazarsak bu bir atama degildir,
