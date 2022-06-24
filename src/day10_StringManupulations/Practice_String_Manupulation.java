@@ -99,6 +99,27 @@ public class Practice_String_Manupulation {
         }
 
          */
+        //String cumle="Java cok kolay, Java cok guzel";
+        //        String kelime="Java";
+        //        /*verilen kelime için asağıdaki şartlardan uygun olanı
+        //        yazan bir programı yazınız
+        //
+        //        -verilen kelime cumlede kullanılmamış
+        //        -verilen kelime cumle de  sadece 1 kere kullanılmış
+        //        -verilen kelime   cumle de 1'den fazla  kullanılmış
+        //
+        //        */
+        //        int kelimeIlkIndex=cumle.indexOf(kelime);
+        //        int kelimeSonIndex=cumle.lastIndexOf(kelime);
+        //        if(kelimeIlkIndex==-1){
+        //            System.out.println("verilen kelime cumlede kullanılmamış");
+        //        } else if (kelimeIlkIndex==kelimeSonIndex) {
+        //            System.out.println("verilen kelime cumle de  sadece 1 kere kullanılmış");
+        //
+        //        }else {
+        //            System.out.println("verilen kelime   cumle de 1'den fazla  kullanılmış");
+        //        }
+
         /*String str = "Calisirsaniz, Java ogrenmek cok kolay";
         System.out.println("index sayısı: " + str.length());// 37
         System.out.println("a'nın son index'i: " + str.lastIndexOf('a'));// 35
@@ -108,6 +129,8 @@ public class Practice_String_Manupulation {
         System.out.println("a'nın 11.index ten öncesi: " +str.lastIndexOf('a',11));// 8
 
          */
+
+
         /*System.out.println("Lütfen bir cümle yazınız");
         String cumle=scan.nextLine().toLowerCase();
         System.out.println("Lütfen bir harf giriniz");
@@ -175,7 +198,7 @@ public class Practice_String_Manupulation {
         System.out.println(str.replace('a','x'));
 
          */
-        String str="Java'da rakamlar 1234567890";
+        /*String str="Java'da rakamlar 1234567890";
         System.out.println(str.replaceAll("a","*"));
         System.out.println(str.replaceAll("\\s","*"));
         System.out.println(str.replaceAll("\\S","*"));
@@ -183,6 +206,108 @@ public class Practice_String_Manupulation {
         System.out.println(str.replaceAll("\\W","*"));
         System.out.println(str.replaceAll("\\d","*"));
         System.out.println(str.replaceAll("\\D","*"));
+
+         */
+        /*String str="Java'da rakamlar 1234567890";
+        System.out.println(str.replaceFirst("a","*"));
+        System.out.println(str.replaceFirst("lar","*"));
+        System.out.println(str.replaceFirst("\\s","*"));
+        System.out.println(str.replaceFirst("\\D","*"));
+
+         */
+        /*String str="Java OOP konsepti kullanır";
+        System.out.println(str.substring(0));//Java OOP konsepti kullanır
+        System.out.println(str.substring(10));//onsepti kullanır
+        System.out.println(str.substring(26));//
+        System.out.println(str.substring(29));//.StringIndexOutOfBoundsException hatası verir
+
+         */
+        /*String str="Java OOP konsepti kullanır";
+        System.out.println(str.substring(5,11));//OOP ko
+        System.out.println(str.substring(3,4));//a
+        System.out.println(str.substring(8,8));//
+        System.out.println(str.substring(8,2));//.StringIndexOutOfBoundsException hatası verir
+
+         */
+        /*String str="  Java öğrenmek çok güzel.   ";
+        System.out.println(str);               //  Java öğrenmek çok güzel.
+        System.out.println(str.length());       //29
+        System.out.println(str.trim());         //Java öğrenmek çok güzel.
+        System.out.println(str.trim().length());//24
+
+         */
+        //Soru-1
+        /*String str=" Java ogrenmek123 Cok guzel@ ";//Java ogrenmek cok guzel
+        System.out.println(str.replace("C","c")
+                .replaceAll("\\d","")
+                .replaceAll("@","").trim());//Java ogrenmek cok guzel
+
+         */
+        //Soru-2
+        /*String str1="$13.99";
+        String str2="$10.55";
+        double str3=Double.parseDouble(str1.replace("$",""));
+        double str4=Double.parseDouble(str2.replace("$",""));
+        System.out.println(str3+str4);
+
+         */
+        //Soru-3
+        /*System.out.println("Lütfen isminizi giriniz");
+        String isim=scan.nextLine();
+        if(isim.indexOf("a")!=-1){
+            System.out.println("Girdiğiniz isim a harfini içeriyor");
+
+        }
+        if(isim.indexOf("Z")!=-1){
+            System.out.println("Girdiğiniz isim Z harfini içeriyor");
+        }
+        if(isim.indexOf("a")==-1 && isim.indexOf("Z")==-1){
+            System.out.println("Girdiğiniz isim a ve Z harfini içermiyor");
+        }
+
+         */
+        //Soru-4
+        /*System.out.println("Lütfen isminizi giriniz");
+        String isim=scan.nextLine();
+        System.out.println("Lütfen soyisim giriniz");
+        String soyisim=scan.nextLine();
+        if(isim.length()>soyisim.length()){
+            System.out.println(isim);
+        }else {
+            System.out.println(soyisim);
+        }
+
+         */
+        //Soru-5
+        /*System.out.println("Lütfen 4 harfli bir kelime yazınız");
+        String metin=scan.nextLine();
+        String ters="";
+        for(int i=metin.length()-1;i>=0;i--){
+            ters=ters+metin.charAt(i);
+
+        }
+        System.out.println("Girdiğiniz Metnin tersi:\n"+ters);
+
+         */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
