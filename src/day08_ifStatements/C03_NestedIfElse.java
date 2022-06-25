@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class C03_NestedIfElse {
     public static void main(String[] args) {
         /*
-        emeklilik kontroşü yapan bir program yazınız
+        emeklilik kontrolü yapan bir program yazınız
         cinsiyet olarak E(erkek) veya K(kadın) değişkenlerini kabul etsin
         farklı bir harf veya sembol girilirse hata mesajı versin
 
