@@ -289,6 +289,14 @@ public class Practice_String_Manupulation {
         System.out.println("Girdiğiniz Metnin tersi:\n"+ters);
 
          */
+        /* soru-5 ikinci çözüm
+        String input="kaya";
+        String tersInput=input.substring(3)+
+                         input.substring(2,3)+
+                         input.substring(1,2)+
+                         input.substring(0,1);
+        System.out.println(tersInput);
+         */
 
 
 

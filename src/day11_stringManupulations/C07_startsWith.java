@@ -9,5 +9,6 @@ public class C07_startsWith {
         System.out.println(input.startsWith("gun", 5));//true
 
 
+
     }
 }

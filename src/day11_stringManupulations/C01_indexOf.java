@@ -14,7 +14,7 @@ public class C01_indexOf {
 
         //eğer istediğimiz index'ten sonrasını kontrol etmek istersek
         // o zaman aynı method'u 2 parametreli kullanabiliriz
-        System.out.println(str.indexOf("g",(6+1)));//6
+        System.out.println(str.indexOf("g",(6+1)));//18
         //yukarıda kş str' da 2. ve 3. e'nin indexlerini bulunuz
         // 2. e'yi bulabilmek için 1. e' nin index'ine ihtiyacımız var
         int ilke=str.indexOf("e");

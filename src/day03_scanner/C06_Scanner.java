@@ -22,5 +22,7 @@ public class C06_Scanner {
         System.out.println("Girilen bilgiler : " + isim+"\t" + soyisim+"\t" + yas);
 
 
+
+
     }
 }
