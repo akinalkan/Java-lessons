@@ -1,4 +1,8 @@
+<<<<<<< HEAD:src/day12_stringManipulations/C08_Discord.java
 package day12_stringManipulations;
+=======
+package day12_stringManupulations;
+>>>>>>> origin/master:src/day12_stringManupulations/C08_Discord.java
 
 import java.util.Scanner;
 
