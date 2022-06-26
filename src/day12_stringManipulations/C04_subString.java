@@ -1,4 +1,4 @@
-package day12_stringManupulations;
+package day12_stringManipulations;
 
 public class C04_subString {
     public static void main(String[] args) {

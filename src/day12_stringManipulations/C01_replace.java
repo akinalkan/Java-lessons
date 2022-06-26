@@ -1,4 +1,4 @@
-package day12_stringManupulations;
+package day12_stringManipulations;
 
 public class C01_replace {
     public static void main(String[] args) {

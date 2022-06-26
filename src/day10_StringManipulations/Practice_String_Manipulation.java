@@ -1,9 +1,9 @@
-package day10_StringManupulations;
+package day10_StringManipulations;
 
 
 import java.util.Scanner;
 
-public class Practice_String_Manupulation {
+public class Practice_String_Manipulation {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 

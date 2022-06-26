@@ -1,4 +1,4 @@
-package day10_StringManupulations;
+package day10_StringManipulations;
 
 public class C04_equalsIgnoreCase {
     public static void main(String[] args) {
