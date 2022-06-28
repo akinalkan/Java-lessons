@@ -17,21 +17,10 @@ public class Q01_SwitchCase {
         String gun = "PAzartesi";
         String gun2 = gun.toLowerCase();
         switch (gun2) {
-            case "pazartesi":
-            case "salı":
-                System.out.println("Java dersi gunleri");
-                break;
-            case "çarşamba":
-            case "cumartesi":
-                System.out.println("SQL dersi gunleri");
-                break;
-            case "persembe":
-            case "cuma":
-                System.out.println("Selenyum dersi gunleri");
-                break;
-            default:
-                System.out.println("izin gunu");
-
+            case "pazartesi", "salı" -> System.out.println("Java dersi gunleri");
+            case "çarşamba", "cumartesi" -> System.out.println("SQL dersi gunleri");
+            case "persembe", "cuma" -> System.out.println("Selenyum dersi gunleri");
+            default -> System.out.println("izin gunu");
         }
 
 

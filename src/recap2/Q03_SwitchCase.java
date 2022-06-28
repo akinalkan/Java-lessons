@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Q03_SwitchCase {
     public static void main(String[] args) {
         // Girilen uc haneli bir sayının okunusnu yazı ile yazdırınız
-        Scanner scan=new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         System.out.print("Lütfen 3 hanerli pozitif bir tamsayı giriniz : ");
-        int sayi=scan.nextInt();
-        if(sayi<=999 && sayi>=100) {
+        int sayi = scan.nextInt();
+        if (sayi <= 999 && sayi >= 100) {
             int birler, onlar, yuzler;
 
             birler = sayi % 10;
@@ -58,13 +58,9 @@ public class Q03_SwitchCase {
                 case 0 -> System.out.print("\t");
             }
 
-        }else {
+        } else {
             System.out.println("Lütfen 3 basamaklı pozitif bir tamsayı giriniz!");
         }
-
-
-
-
 
 
     }

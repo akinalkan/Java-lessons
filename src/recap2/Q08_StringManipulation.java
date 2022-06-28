@@ -15,14 +15,14 @@ public class Q08_StringManipulation {
          * input = el
          * output = el
          */
-        Scanner scan=new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         System.out.print("Lütfen bir kelime yazınız: ");
-        String str=scan.next();
-        if(str.length()>=3){
-            String str1=str.substring(str.length()-2);
-            System.out.print(str1+str1+str1);
+        String str = scan.next();
+        if (str.length() >= 3) {
+            String str1 = str.substring(str.length() - 2);
+            System.out.print(str1 + str1 + str1);
 
-        }else{
+        } else {
             System.out.print(str);
         }
 

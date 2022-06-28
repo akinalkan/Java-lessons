@@ -14,17 +14,15 @@ public class Q07_StringManipulation {
 		 	 \\W  ==> A->Z		a->z			0->9    _ disindaki hersey
 		 3) \\s   ==> space
 		 	 \\S   ==> space disindaki hersey  */
-        String str1="$13.99";
-        String str2="$10.55";
-        String str3=str1.substring(1);
-        String str4=str2.substring(1);
+        String str1 = "$13.99";
+        String str2 = "$10.55";
+        String str3 = str1.substring(1);
+        String str4 = str2.substring(1);
         System.out.println(str3);
         System.out.println(str4);
-        double sayi1=Double.parseDouble(str3);
-        double sayi2=Double.parseDouble(str4);
-        System.out.println(str1+"+"+str2+"="+"$"+(sayi1+sayi2));
-
-
+        double sayi1 = Double.parseDouble(str3);
+        double sayi2 = Double.parseDouble(str4);
+        System.out.println(str1 + "+" + str2 + "=" + "$" + (sayi1 + sayi2));
 
 
     }
