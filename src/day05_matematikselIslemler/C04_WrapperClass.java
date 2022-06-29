@@ -16,6 +16,10 @@ public class C04_WrapperClass {
         Integer sayi2=10;
 
         sayi2.byteValue();
+        System.out.println("sayi2 = " + sayi2);
+        String str2="1234";
+        int sayi3=Integer.parseInt(str2);
+        System.out.println("sayi3 = " + sayi3);
 
     }
 }

@@ -10,21 +10,21 @@ public class C01_IfElseIfStatements {
         Scanner scan=new Scanner(System.in);
         System.out.println("Lutfen bir gun ismi giriniz");
         String gun= scan.nextLine().toLowerCase();
-        if (gun.equals("pazartesi")){
+        if ("pazartesi".equals(gun)) {
             System.out.println("Paz");
-        }else if (gun.equals("sali")){
+        } else if ("sali".equals(gun)) {
             System.out.println("Sal");
-        }else if (gun.equals("carsamba")){
+        } else if ("carsamba".equals(gun)) {
             System.out.println("Car");
-        }else if (gun.equals("persembe")){
+        } else if ("persembe".equals(gun)) {
             System.out.println("Per");
-        }else if (gun.equals("cuma")){
+        } else if ("cuma".equals(gun)) {
             System.out.println("Cum");
-        }else if (gun.equals("cumartesi")){
+        } else if ("cumartesi".equals(gun)) {
             System.out.println("Cum");
-        }else if (gun.equals("pazar")){
+        } else if ("pazar".equals(gun)) {
             System.out.println("Paz");
-        }else {
+        } else {
             System.out.println("Gecerli gun ismi giriniz");
         }
     }

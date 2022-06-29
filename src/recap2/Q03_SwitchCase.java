@@ -10,7 +10,6 @@ public class Q03_SwitchCase {
         int sayi = scan.nextInt();
         if (sayi <= 999 && sayi >= 100) {
             int birler, onlar, yuzler;
-
             birler = sayi % 10;
             sayi /= 10;
             onlar = sayi % 10;
@@ -27,11 +26,7 @@ public class Q03_SwitchCase {
                 case 7 -> System.out.print("yediyüz\t");
                 case 8 -> System.out.print("sekizyüz\t");
                 case 9 -> System.out.print("dokuzyüz\t");
-
-
             }
-
-
             switch (onlar) {
                 case 1 -> System.out.print("on\t");
                 case 2 -> System.out.print("yirmi\t");
@@ -43,7 +38,6 @@ public class Q03_SwitchCase {
                 case 8 -> System.out.print("seksen\t");
                 case 9 -> System.out.print("doksan\t");
                 case 0 -> System.out.print("\t");
-
             }
             switch (birler) {
                 case 1 -> System.out.print("bir\t");
@@ -57,11 +51,8 @@ public class Q03_SwitchCase {
                 case 9 -> System.out.print("dokuz\t");
                 case 0 -> System.out.print("\t");
             }
-
         } else {
             System.out.println("Lütfen 3 basamaklı pozitif bir tamsayı giriniz!");
         }
-
-
     }
 }

@@ -27,15 +27,16 @@ public class C08_Discord {
         Scanner scan=new Scanner(System.in);
         System.out.println("Lütfen isminizi giriniz");
         String isim=scan.nextLine();
-        if(isim.indexOf("a")!=-1){
+        if(isim.contains("a")){
             System.out.println("Girdiğiniz isim a harfini içeriyor");
 
         }
         if(isim.indexOf("Z")!=-1){
             System.out.println("Girdiğiniz isim Z harfini içeriyor");
         }
-        if(isim.indexOf("a")==-1 && isim.indexOf("Z")==-1){
-            System.out.println("Girdiğiniz isim a ve Z harfini içermiyor");
+        if(isim.indexOf("a")==-1 && isim.contains("Z")){
+            System.out.println("Girdiğiniz isim a ve Z harfini içermiyor");//isim.indexOf("a")==-1 ve isim.contains("a")
+                                                                            // aynı iş yapar
         }
         /*if (!(isim.contains("a")||isim.contains("Z"))){
             System.out.println("Girdiginiz isim a veya Z harfi icermiyor");

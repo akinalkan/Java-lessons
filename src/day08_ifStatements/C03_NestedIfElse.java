@@ -21,23 +21,23 @@ public class C03_NestedIfElse {
         System.out.println("Lütfen yaşınızı giriniz");
         double yas = scan.nextDouble();
 
-        if (cinsiyet=='E'){
-            if (yas<0 || yas>80){
+        if (cinsiyet == 'E') {
+            if (yas < 0 || yas > 80) {
                 System.out.println("Gecerli ys giriniz");
-            }else if (yas<65){
+            } else if (yas < 65) {
                 System.out.println("Emekli olamazsin");
-            }else {
+            } else {
                 System.out.println("Emekli olabilirsin");
             }
-        }else if (cinsiyet=='K'){
-            if (yas<0 || yas>80){
+        } else if (cinsiyet == 'K') {
+            if (yas < 0 || yas > 80) {
                 System.out.println("Gecerli ys giriniz");
-            }else if (yas<60){
+            } else if (yas < 60) {
                 System.out.println("Emekli olamazsin");
-            }else {
+            } else {
                 System.out.println("Emekli olabilirsin");
             }
-        }else {
+        } else {
             System.out.println("Lutfen gecerli bir tercih yaziniz");
         }
     }

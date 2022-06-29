@@ -20,9 +20,9 @@ public class C05_NestedIfElseStatements {
         char ilkharf=sifre.charAt(0);
 
         if(ilkharf>='A'&&ilkharf<='Z' ){ // ilk harfi büuük olan kelimeler
-            if( ilkharf=='A'){
+            if (ilkharf == 'A') {
                 System.out.println("Geçerli şifre");
-            }else{
+            } else {
                 System.out.println("Geçersiz şifre");
             }
 

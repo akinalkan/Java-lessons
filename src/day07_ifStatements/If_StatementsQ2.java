@@ -9,7 +9,7 @@ public class If_StatementsQ2 {
 
         System.out.println("Gün isminin ilk harfini giriniz");
         ilkHarf=scan.next().toUpperCase();
-        if(ilkHarf.equals("P")){
+        if ("P".equals(ilkHarf)) {
             System.out.println("Pazar,Pazartesi,Perşembe");
         }
         if(ilkHarf.equals("S")){

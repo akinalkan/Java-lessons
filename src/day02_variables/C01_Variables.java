@@ -11,7 +11,7 @@ public class C01_Variables {
        // variable    değer
        //java önce değeri hesaplar sonra assign işlemini yapar
 
-       //not2 'yi 80 yapalım
+       //not2 'yi 90 yapalım
         not2=90;
 
         // yeni bir int variable oluşturalım ilk iki variable'in ortalaması olsun

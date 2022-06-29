@@ -22,6 +22,7 @@ public class C01_WrapperClasses {
         //guzelMi. boolean primitive olduğundan hazır methodu bulunmuyor
         Boolean buGuzelMi=true;
         buGuzelMi.toString();
+        System.out.println("buGuzelMi = " + buGuzelMi);
 
 
         System.out.println(Short.MAX_VALUE); //32767
