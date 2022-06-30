@@ -10,22 +10,10 @@ public class C06_SwitchCase {
         String input="salı";
         input=input.toLowerCase();
 
-        switch (input){
-            case "pazartesi":
-            case "salı":
-            case "çarşamba":
-            case "perşembe":
-            case "cuma":
-                System.out.println("Hafta içi");
-                break;
-            case "cumartesi":
-            case "pazar":
-                System.out.println("Hafta sonu");
-                break;
-            default:
-                System.out.println("Lütfen geçerli bir gün giriniz");
-
-
+        switch (input) {
+            case "pazartesi", "salı", "çarşamba", "perşembe", "cuma" -> System.out.println("Hafta içi");
+            case "cumartesi", "pazar" -> System.out.println("Hafta sonu");
+            default -> System.out.println("Lütfen geçerli bir gün giriniz");
         }
 
 

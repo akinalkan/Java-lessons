@@ -8,24 +8,11 @@ public class C08_SwitchCasePractice_2 {
         System.out.println("Lütfen bir sayı giriniz");
         int sayi= scan.nextInt();
 
-        switch (sayi){
-
-            case 10:
-                System.out.println("İki basamaklı en küçük sayı");
-                break;
-            case 100:
-                System.out.println("Üç basamaklı en küçük sayı");
-                break;
-            case 1000:
-                System.out.println("Dört basamaklı en küçük sayı");
-                break;
-            default:
-                System.out.println("Girdiğin sayıyı değiştir");
-
-
-
-
-
+        switch (sayi) {
+            case 10 -> System.out.println("İki basamaklı en küçük sayı");
+            case 100 -> System.out.println("Üç basamaklı en küçük sayı");
+            case 1000 -> System.out.println("Dört basamaklı en küçük sayı");
+            default -> System.out.println("Girdiğin sayıyı değiştir");
         }
 
 

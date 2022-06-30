@@ -21,7 +21,7 @@ public class C04_MethodCreation {
 
     public static void topla(int input1, int input2) {
         //3.adım method deklarasyonun da değiştirilmesi gereken bölümleri değiştir
-        //(access odifier ,return type vb...)
+        //(access modifier ,return type vb...)
         //4.adım eğer return type void dışında bir şeyse
         // return keyword'u ve dönecek değeri hesaplamalıyız
         System.out.println("Girilen iki sayının toplamı: "+(input1+input2));

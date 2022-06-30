@@ -3,6 +3,7 @@ package day12_stringManipulations;
 import java.util.Scanner;
 
 public class C07_webSorusu {
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Lutfen ad giriniz");
@@ -10,6 +11,7 @@ public class C07_webSorusu {
         String harf1 = ad.substring(0, 1);
         String harf2 = ad.substring(1, 2);
         String harf3 = ad.substring(2, 3);
+
 
         if (ad.length() != 3) {
             System.out.println("adın uzunlugu 3 olmalidir");
