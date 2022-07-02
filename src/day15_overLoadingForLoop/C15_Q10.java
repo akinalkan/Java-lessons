@@ -10,7 +10,7 @@ public class C15_Q10 {
         System.out.println("Lutfen 2. sayiyi giriniz");
         int sayi2 = scan.nextInt();
         int toplam = 0;
-        if(sayi1<sayi2){
+        if (sayi1 < sayi2) {
             for (int i = sayi1; i <= sayi2; i++) {
                 toplam += i;
 
@@ -18,17 +18,16 @@ public class C15_Q10 {
             System.out.println(toplam);
 
 
-        }else if (sayi1>sayi2){for (int i = sayi2; i <= sayi1; i++) {
-            toplam += i;
+        } else if (sayi1 > sayi2) {
+            for (int i = sayi2; i <= sayi1; i++) {
+                toplam += i;
 
-        }
+            }
             System.out.println(toplam);
 
-        }else{
+        } else {
             System.out.println("Lutfen farkli iki sayi giriniz");
         }
-
-
 
 
     }
