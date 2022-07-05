@@ -12,12 +12,10 @@ public class Q06_StringManipulation {
         String str1 = scan.next();
         System.out.print("Lütfen 2. kelimeyi giriniz: ");
         String str2 = scan.next();
-        String str3 = str1.concat(str2);
-        System.out.println(str3);
+        System.out.println(str1.concat(str2));
         String str4 = str1.substring(1);
         String str5 = str2.substring(1);
-        String str6 = str4.concat(str5);
-        System.out.println(str6);
+        System.out.println(str4.concat(str5));
 
 
     }

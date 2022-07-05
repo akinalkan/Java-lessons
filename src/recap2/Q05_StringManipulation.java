@@ -13,7 +13,7 @@ public class Q05_StringManipulation {
         System.out.print("Lütfen soyisminizi giriniz: ");
         String soyIsim = scan.nextLine();
         String buyuksoyIsım = soyIsim.toUpperCase();
-        System.out.println(buyukIsım + " " + buyuksoyIsım);
+        System.out.println(buyukIsım.concat(" "+buyuksoyIsım));
 
 
     }

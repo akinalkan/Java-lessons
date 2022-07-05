@@ -19,13 +19,13 @@ public class Q08_StringManipulation {
         System.out.print("Lütfen bir kelime yazınız: ");
         String str = scan.next();
         if (str.length() >= 3) {
-            String str1 = str.substring(str.length() - 2);
-            System.out.print(str1 + str1 + str1);
-
+            for (int i = 1; i <= 3; i++) {
+                String str1 = str.substring(str.length() - 2);
+                System.out.print(str1);
+            }
         } else {
             System.out.print(str);
         }
-
 
     }
 

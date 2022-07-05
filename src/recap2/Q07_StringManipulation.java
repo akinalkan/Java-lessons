@@ -20,9 +20,9 @@ public class Q07_StringManipulation {
         String str4 = str2.substring(1);
         System.out.println(str3);
         System.out.println(str4);
-        double sayi1 = Double.parseDouble(str3);
-        double sayi2 = Double.parseDouble(str4);
-        System.out.println(str1 + "+" + str2 + "=" + "$" + (sayi1 + sayi2));
+         Double.parseDouble(str3);
+         Double.parseDouble(str4);
+        System.out.println(str1 + "+" + str2 + "=" + "$" + (Double.parseDouble(str3) + Double.parseDouble(str4)));
 
 
     }
