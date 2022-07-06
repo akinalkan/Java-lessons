@@ -25,7 +25,7 @@ public class C10_FaizUygulamasi {
 
 
         for (int i = 1; i <= vade; i++) {
-            toplampara = (toplampara * faizOrani) + toplampara;
+            toplampara += (toplampara * faizOrani);
 
             System.out.println(i + "yilin sonunda toplam para : " + (int)toplampara);
         }

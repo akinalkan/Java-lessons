@@ -14,6 +14,15 @@ public class C06_NestedForLoop {
 
 
          */
+        /*
+            A
+            A N
+            A N K
+            A N K A
+            A N K A R
+            A N K A R A
+
+         */
         String input = "ANKARA";
         for (int i = 1; i <= input.length(); i++) {
             for (int j = 1; j <= i; j++) {

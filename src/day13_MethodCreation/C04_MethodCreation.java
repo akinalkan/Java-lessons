@@ -11,7 +11,7 @@ public class C04_MethodCreation {
         //method 4 adımda oluşturulur
         //1.adım method call
         //2.adım argüment eklenmesi gerekiyorsa ekleyelim
-        //eğer method'un return type void den farklı olacakse
+        //eğer method'un return type void den farklı olacaksa
         //bir variable oluşturup,method call'u assign edelim
         topla(input1,input2);
 

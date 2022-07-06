@@ -10,7 +10,7 @@ public class C02_OverLoading {
         veya verilen string'deki bazi parcalari yenileri ile de;gistirmek icin
         2 adet replace() method'u var
 
-        Java ayni isimde birden fzla method varsa
+        Java ayni isimde birden fazla method varsa
         hangisinin kullanilacagina parametre sayisi ve
         paramaetrelern data turune gore karar verir.
 

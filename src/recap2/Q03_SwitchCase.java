@@ -6,7 +6,7 @@ public class Q03_SwitchCase {
     public static void main(String[] args) {
         // Girilen uc haneli bir sayının okunusnu yazı ile yazdırınız
         Scanner scan = new Scanner(System.in);
-        System.out.print("Lütfen 3 hanerli pozitif bir tamsayı giriniz : ");
+        System.out.print("Lütfen 3 haneli pozitif bir tamsayı giriniz : ");
         int sayi = scan.nextInt();
         if (sayi <= 999 && sayi >= 100) {
             int birler, onlar, yuzler;

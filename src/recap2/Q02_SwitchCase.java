@@ -14,7 +14,7 @@ public class Q02_SwitchCase {
 		 */
         Scanner scan = new Scanner(System.in);
         System.out.println("Lütfen A,B ya da C seçiniz");
-        char input = scan.next().charAt(0);
+        char input = scan.next().toUpperCase().charAt(0);
         switch (input) {
             case 'A' -> System.out.println("Java is easy");
             case 'B' -> System.out.println("Java is fun");
