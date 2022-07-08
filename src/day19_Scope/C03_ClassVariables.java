@@ -16,7 +16,7 @@ public class C03_ClassVariables {
         class level variable'lara deger atayip atamamak bize kalmistir
         istersek deger atamasi yapariz
         istemezsek deger atamayiz
-        eger deger atamissakJava atadigimiz o degeri kabul eder
+        eger deger atamissak Java atadigimiz o degeri kabul eder
         deger atamazsak o zaman bu variable'lara default bir deger atamasi yapar
         int -->0
         String -->null
@@ -28,6 +28,9 @@ public class C03_ClassVariables {
         /*
         baska class'daki instance variable'lara obje olusturarak ulasabiliriz
          */
+        C01_InstanceVariables obje5= new C01_InstanceVariables();
+        obje5.staticOlmayanMethod();//static olmayan method : 20
+
 
         C02_StaticVariables obje1=new C02_StaticVariables();
         obje1.staticOlmayanMethod();//10

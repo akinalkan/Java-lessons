@@ -40,6 +40,10 @@ public class C01_InstanceVariables {
         /*
         her obje olustugunda instance (obje) variable'inin ilk atanan degerini alir
          */
+        staticMethod();//static method : 20
+
+        C01_InstanceVariables obje5=new C01_InstanceVariables();
+        obje5.staticOlmayanMethod();//static olmayan method : 20
 
 
 
@@ -59,13 +63,13 @@ public class C01_InstanceVariables {
          */
         //instSayi=30;
         C01_InstanceVariables obje4=new C01_InstanceVariables();
-        System.out.println(obje4.instSayi);
+        System.out.println("static method : "+obje4.instSayi);
 
 
     }
     public void staticOlmayanMethod(){
 
-        System.out.println(instSayi);
+        System.out.println("static olmayan method : "+instSayi);
         /*
         instance variable'lar class icersindeki static olmayan methodlardan direk kullanilabiir
          */
