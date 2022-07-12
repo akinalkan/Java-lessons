@@ -56,14 +56,18 @@ public class C07_Q1 {
         if (sayi > 100) {
             int birlerBasamak = 0;
             int rakamToplam = 0;
+
             birlerBasamak = sayi % 10;
             rakamToplam += birlerBasamak;
             sayi /= 10;
+
             birlerBasamak = sayi % 10;
             rakamToplam += birlerBasamak;
             sayi /= 10;
+
             birlerBasamak = sayi % 10;
             rakamToplam += birlerBasamak;
+
             System.out.println("sayi 100'den buyuk sayinin son uc basamak toplami : " + rakamToplam);
         } else {
             int birlerBasamkIki = sayi % 10;

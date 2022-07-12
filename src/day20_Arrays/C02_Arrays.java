@@ -6,6 +6,15 @@ public class C02_Arrays {
     public static void main(String[] args) {
 
         int sayilar[]=new int[3];
+        int sayiciklar[]=new int[5];
+        sayiciklar[0]=1;
+        sayiciklar[1]=11;
+        sayiciklar[2]=111;
+        sayiciklar[3]=1111;
+        sayiciklar[4]=11111;
+
+
+        System.out.println(Arrays.toString(sayiciklar));
         System.out.println(sayilar);//[I@1b28cdfa
         /*
         non-primitive data turundeki data'lari her zaman direkt yazdiramayiz

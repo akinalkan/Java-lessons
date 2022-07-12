@@ -7,7 +7,7 @@ public class C02_OverLoading {
         Java'da olusturdugumuz methodlarin ismini
         yaptigi islev ile uyumlu olmasini isteriz
         Mesala bir string'in bir bolumunu almak icin Java 2 adet substring() method'u
-        veya verilen string'deki bazi parcalari yenileri ile de;gistirmek icin
+        veya verilen string'deki bazi parcalari yenileri ile degistirmek icin
         2 adet replace() method'u var
 
         Java ayni isimde birden fazla method varsa
@@ -24,7 +24,7 @@ public class C02_OverLoading {
         ayni isimde ama farkli methodlar olusturmak icin
         degistirecegimiz seyler:
         1-parametre sayisi
-        2-ayni sayida parametreye sahip olsa bile parametre turlerini degistirebiliriz
+        2-ayni sayida parametreye sahip olsa bile parametrelerin data turlerini degistirebiliriz
         3-ayni sayida ve ayni data turunde parametreleri olan methodlarda parametrelerin siralanisi
          */
 

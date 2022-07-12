@@ -1,13 +1,18 @@
 package day18_while_doWhileLoop;
 
+import java.util.Scanner;
+
 public class C02_WhileLoop {
     public static void main(String[] args) {
         /*
         Soru 7 ) Kullanicidan bir sayi alin ve bu sayinin rakamlari toplamini yazdirin
          */
 
+        Scanner scan=new Scanner(System.in);
+        System.out.println(Integer.MAX_VALUE);
+        System.out.print("Lutfen bir sayi giriniz : ");
+        int input= scan.nextInt();
 
-        int input=5432;
 
         int rakamlarToplami=0;
         int birlerBasamagi=0;

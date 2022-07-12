@@ -10,10 +10,13 @@ public class C04_NestedTernary {
          yoksa “girdiginiz karakter harf degil” yazdirin.
          */
         Scanner scan=new Scanner(System.in);
-        System.out.println("lutfen bir harf giriniz");
+        System.out.print("lutfen bir harf giriniz : ");
         char harf=scan.next().charAt(0);
-        String sonuc=harf>='a' && harf<='z' ?"Küçük harf":harf>='A' && harf<='Z'?"Büyük harf":"Geçersiz karakter";
-        System.out.println(sonuc);
+         String sonuc=harf>='a' && harf<='z' ?"Küçük harf":harf>='A' && harf<='Z'?"Büyük harf":"Geçersiz karakter";
+         System.out.println(sonuc);
+
+
+
 
 
     }

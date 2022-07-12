@@ -31,7 +31,7 @@ public class C09_WhileLoop {
             }else{
                 System.out.println("İlk harf büyük harf olmalı");
             }
-            if(sifre.charAt(sifre.length()-1)>='a'&&sifre.charAt(sifre.length()-1)<='z'){
+            if(sifre.charAt(sifre.length()-1)>='a' && sifre.charAt(sifre.length()-1)<='z'){
                 kontrol++;
             }else{
                 System.out.println("Son harf küçük harf olmalı");

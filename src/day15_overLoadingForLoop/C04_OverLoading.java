@@ -11,7 +11,7 @@ public class C04_OverLoading {
     /*
     Java hangi method'un calisacagina karar verirken optimizasyon yapar
     Eger hic cast yapmadan kullanabilecegi bir method varsa onu kullanir
-    Eger cast yapmadan kullanacagi method yoksa enaz cast yaparak kullanabilecegi method'u tercih eder
+    Eger cast yapmadan kullanacagi method yoksa en az cast yaparak kullanabilecegi method'u tercih eder
 
      */
 

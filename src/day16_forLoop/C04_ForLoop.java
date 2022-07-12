@@ -13,7 +13,7 @@ public class C04_ForLoop {
 
          */
         Scanner scan=new Scanner(System.in);
-        System.out.println("Lutfen 100'den kucuk pozitif bir tamsayi giriniz");
+        System.out.print("Lutfen 100'den kucuk pozitif bir tamsayi giriniz : ");
         int sayi=scan.nextInt();
 
         for(int i=1;i<=sayi; i++){

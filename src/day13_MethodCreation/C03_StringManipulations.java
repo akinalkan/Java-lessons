@@ -8,9 +8,7 @@ public class C03_StringManipulations {
                      */
         String str=" Java ogrenmek123 Cok guzel@ ";
         str=str.trim();
-        str=str.replaceAll("\\d","");
-        str=str.replace("@",".");
-        str=str.replace("C","c");
+        str=str.replaceAll("\\d","").replace("@",".").replace("C","c");
         System.out.println(str);
     }
 }

@@ -9,7 +9,7 @@ public class C08_WhileLoop {
         kullanicidan toplanmak uzere sayilar alin
         sayilarin toplami 500'u gecince
         sayilarin toplamini ve kac sayi topladigini su sekilde yazdirin
-        13 sayi girdiniz ve toplam;lari 567
+        13 sayi girdiniz ve toplamlari 567
          */
 
         int toplam=0;

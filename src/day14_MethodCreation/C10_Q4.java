@@ -17,14 +17,15 @@ public class C10_Q4 {
         System.out.print("Lutfen soyisminizi giriniz: ");
         String soyisim=scan.nextLine();
 
-        char isimIlkharf=isim.toUpperCase().charAt(0);
-        String isimKalan=isim.substring(1).toLowerCase();
-        String isimSon=isimIlkharf+isimKalan;
+        String isimIlkharf=isim.toUpperCase().charAt(0)+isim.replaceAll("\\w","*");
+        //System.out.println(isimIlkharf);
+        //String isimKalan=isim.substring(1).toLowerCase();
+        //String isimSon=isimIlkharf;
 
-        char soyisimIlkharf=soyisim.toUpperCase().charAt(0);
-        String soyisimKalan=soyisim.substring(1).toLowerCase();
-        String soyisimSon=soyisimIlkharf+soyisimKalan;
-        String kullaniciAdi=isimSon+" "+soyisimSon;
+        String soyisimIlkharf=soyisim.toUpperCase().charAt(0)+isim.replaceAll("\\w","*");;
+       // String soyisimKalan=soyisim.substring(1).toLowerCase();
+       // String soyisimSon=soyisimIlkharf+soyisimKalan;
+        String kullaniciAdi=isimIlkharf+" "+soyisimIlkharf;
         System.out.println(kullaniciAdi);
 
         return kullaniciAdi;

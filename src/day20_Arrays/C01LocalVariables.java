@@ -23,5 +23,6 @@ public class C01LocalVariables {
         //System.out.println(sayi); --> sayi main method'da olusturulmus ;local bir
         //variable'dir.sadece main method'da gecerlidir
         int sayiMethod=20;
+
     }
 }

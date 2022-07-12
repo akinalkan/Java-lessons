@@ -1,5 +1,7 @@
 package day02_variables;
 
+import java.util.Locale;
+
 public class C07_Work5 {
 
     public static void main(String[] args) {

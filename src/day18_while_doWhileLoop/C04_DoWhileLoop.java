@@ -31,6 +31,7 @@ public class C04_DoWhileLoop {
                 System.out.println("Girilen sayi cift : "+sayi);
                 toplam+=sayi;
             }else{
+                toplam+=sayi;
                 System.out.println("Girilen sayi tek");
             }
 
@@ -60,6 +61,7 @@ public class C04_DoWhileLoop {
                 System.out.println("Girilen sayi cift : "+sayi);
                 toplam2+=sayi;
             }else{
+                toplam2+=sayi;
                 System.out.println("Girilen sayi tek");
             }
 

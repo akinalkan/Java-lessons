@@ -3,7 +3,7 @@ package day15_overLoadingForLoop;
 public class C05_ForLoop {
     public static void main(String[] args) {
 
-        // 1'den 5'e kadar olan tamsilari toplayalim
+        // 1'den 5'e kadar olan tamsayilari toplayalim
 
         int toplam = 0;
         for (int i = 10; i <= 20; i++) {

@@ -12,6 +12,7 @@ public class C04_ElemanlariYazdirma {
 
         //array'in tum elementlerini yazdirin
 
+
         for (int i = 0; i < sayilar.length; i++){
             System.out.print(sayilar[i]+" ");//1 2 3 4 5 6 7
 
