@@ -29,10 +29,12 @@ public class C02_Arrays {
 
         String sinifList[]={"Ali","Ayse","Ahmet"};
         System.out.println(Arrays.toString(sinifList));//[Ali, Ayse, Ahmet]
+        Arrays.sort(sinifList);
+        System.out.println(Arrays.toString(sinifList));//[Ahmet, Ali, Ayse]
         sinifList[1]="Hasan";
-        System.out.println(Arrays.toString(sinifList));//[Ali, Hasan, Ahmet]
+        System.out.println(Arrays.toString(sinifList));//[Ahmet, Hasan, Ayse]
         System.out.println(sinifList[1]);//Hasan
-        System.out.println(sinifList[0]);//Ali
+        System.out.println(sinifList[0]);//Ahmet
 
 
 

@@ -6,7 +6,7 @@ public class C05_SolaKaydirma {
     public static void main(String[] args) {
         /*
         Soru 1: Verilen 3 elemanli bir array’in tum elemanlarini
-         bir soldaki konuma tasiyacak bir program yazin.
+         bir SOL'daki konuma tasiyacak bir program yazin.
          Ornek; array [1,2, 3] ise output [2, 3, 1] olacak.
          */
         int arr[]={1,2,3,4,5};
@@ -21,7 +21,7 @@ public class C05_SolaKaydirma {
         System.out.println(Arrays.toString(arr));//[2, 3, 4, 5, 1]
         /*
         yukarida degistirdigimiz array'i
-        ilk duruma getirmek icin saga kaydiralim
+        ilk duruma getirmek icin SAG'A kaydiralim
          */
         temp=arr[arr.length-1];
 
