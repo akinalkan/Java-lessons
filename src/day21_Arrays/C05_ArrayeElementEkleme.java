@@ -17,7 +17,9 @@ public class C05_ArrayeElementEkleme {
     }
 
     public static String[] elemanEkle(String[] sinifListesi, String eklenecekIsim) {
+
       String [] yeniSinifListesi=new String[sinifListesi.length+1];//[null,null]
+
         //eski listeden 1 eleman fazla yeni bir array olusturduk
         for (int i = 0; i < sinifListesi.length; i++) {
             yeniSinifListesi[i]=sinifListesi[i];
