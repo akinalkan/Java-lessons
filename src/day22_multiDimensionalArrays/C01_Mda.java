@@ -13,7 +13,7 @@ public class C01_Mda {
         ancak array'in icerisindeki elementleri direk yazdirabiliyorduk
         cunku genelde primitive data turu yada string elementler kullaniliyordu
 
-        Multi dimensional array';l;erfe en cok dikkat edecegimiz konu
+        Multi dimensional arraylerde en cok dikkat edecegimiz konu
         ulasmak istedigimiz elementin bir array mi yoksa
         primitive data mi oldugudur
          */
@@ -33,7 +33,7 @@ public class C01_Mda {
         System.out.println(Arrays.deepToString(sayilar));//[[1, 2, 4, 5], [3, 4]]
 
         /*
-        array'i 2 sekilde dec;lare edebiliyorduk
+        array'i 2 sekilde declare edebiliyorduk
         1.'sinde elemanlari direk yazabiliriz
         int [][] sayilar={{1,2,4,5},{3,4}};
 

@@ -1,5 +1,7 @@
 package day22_multiDimensionalArrays;
 
+import java.util.Arrays;
+
 public class C02_MdaTumElementleriYazdirma {
     public static void main(String[] args) {
         //Verilen bir multi-dimensional array'in tum
@@ -22,6 +24,7 @@ public class C02_MdaTumElementleriYazdirma {
 
 
         }
+
 
     }
 }
