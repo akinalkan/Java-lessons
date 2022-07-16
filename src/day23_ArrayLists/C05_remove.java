@@ -15,6 +15,7 @@ public class C05_remove {
         System.out.println(sayilar1);// [5, 3, 2, 1]
 
         sayilar1.remove(1);
+
         /*
         sayilardan olusan bir list varsa
         java remove method'unda sayi yazdigimiz da

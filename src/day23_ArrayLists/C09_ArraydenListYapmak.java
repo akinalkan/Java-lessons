@@ -10,7 +10,7 @@ public class C09_ArraydenListYapmak {
 
         /*
         List ile calisirken en kotu ozelligi
-        elemanlari tek tek eklemek
+          elemanlari tek tek eklemek
          */
 
         Integer []arr={2,3,5,6,8,4,2,6,9,0,1,3,6,4,2,7,0};
@@ -31,13 +31,14 @@ public class C09_ArraydenListYapmak {
         bu islemi yapmasi icin java'nin olusturdugu bir method'da var ancak ancak
         bu yontemin cok yan etkisi var
 
-        1- bu sekilde olusturulan listeyde ,addremove givi size 'i degistiren method'lar kullanilamaz
+        1- bu sekilde olusturulan listeyde ,addremove gibi size 'i degistiren method'lar kullanilamaz
 
         2-asList method'u ile olusturulan liste ve kaynak olan array
         birbiri ile ilisik olarak hayatlarina devam ederler
         birinde yaptigimiz  degisiklik digerinide otomatik olarak digerini de isler
 
          */
+
         List<Integer> sayilar2= Arrays.asList(arr);
         System.out.println(sayilar2);//[2, 3, 5, 6, 8, 4, 2, 6, 9, 0, 1, 3, 6, 4, 2, 7, 0]
 

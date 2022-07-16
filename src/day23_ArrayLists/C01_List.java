@@ -5,6 +5,7 @@ import java.util.List;
 
 public class C01_List {
     public static void main(String[] args) {
+
         List<Integer> sayilar1=new ArrayList<>();
         sayilar1.add(5);
         sayilar1.add(3);

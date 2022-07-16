@@ -16,11 +16,12 @@ public class C06_contains {
         System.out.println(urunler.contains("Hobby"));//false
 
         List<String> urunler2=new ArrayList<>();
-        urunler.add("Nutella");
-        urunler.add("Ikram");
+        urunler2.add("Nutella");
+        urunler2.add("Ikram");
 
         System.out.println(urunler.containsAll(urunler2));//true
         urunler2.add("Hobby");
+        System.out.println(urunler2);
         System.out.println(urunler.containsAll(urunler2));//false
 
         System.out.println(urunler.equals(urunler2));//false***
