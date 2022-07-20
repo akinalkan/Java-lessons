@@ -18,6 +18,7 @@ public class C02_ArraydenListOlusturma {
 
         while(sayiListesi.size()<200){
             sayi= rnd.nextInt(1000);
+
             if(!sayiListesi.contains(sayi)){
                 sayiListesi.add(sayi);
 
@@ -28,12 +29,12 @@ public class C02_ArraydenListOlusturma {
         System.out.println(sayiListesi);
 
         boolean bildiMi=false;
-        int tahminSayisi=1;
+        int tahminSayisi=1;// ilk tahminde bulabiliriz bu yuzden 0 degil 1 aldik
         Scanner scan=new Scanner(System.in);
 
 
         while(!bildiMi){
-            System.out.print("Lutfen bir sayi tahminide bulununuz : ");
+            System.out.print("Lutfen bir sayi tahmininde bulununuz : ");
             sayi= scan.nextInt();
 
             if(sayiListesi.contains(sayi)){

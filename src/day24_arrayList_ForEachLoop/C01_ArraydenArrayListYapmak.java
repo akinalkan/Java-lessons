@@ -8,19 +8,21 @@ public class C01_ArraydenArrayListYapmak {
 
 
         String[] arr={"Ismail","Nurullah","Fatih"};
-        /*
+        String str=arr[0]+" "+arr[1]+arr[2];
+        System.out.println(str);
+                /*
         Uzun listeler olusturmamiz gerektiginde tek tek eklemek yerine
         array olusturup bunlari list'e cevirmek daha pratik olabilir
 
         1-loop ile array'deki tum elemanlari list'e ceviririz
-        2-Arraus.asList() kullanabiliriz
-        Ancak 2 yanetkivar
-        -Arrays class'i kullanildigi icin array ozelliklewri geceerli olur
-        dolayisiyla List'de olan add,remove gibi size i degistiren
+        2-Arrays.asList() kullanabiliriz
+        Ancak 2 yan etki var
+        -Arrays class'i kullanildigi icin array ozellikleri gecerli olur
+        dolayisiyla List'de olan add,remove gibi size'i degistiren
         meethodlar bu sekilde olusturulan list'lerde kullanilamaz
 
-        -Kaynak olan array ile urun olan list ozdesl;estiri;lir
-        birinde olan degisiklik digerinde oomatik olarak islenir
+        -Kaynak olan array ile urun olan list ozdeslestirilir
+        birinde olan degisiklik digerinde otomatik olarak islenir
          */
 
         List<String> sinifList= Arrays.asList(arr);

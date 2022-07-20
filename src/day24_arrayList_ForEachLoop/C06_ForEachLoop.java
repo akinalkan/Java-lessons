@@ -19,7 +19,7 @@ public class C06_ForEachLoop {
                 liste.add(each);
             }
         }
-        Collections.sort(liste);
+        Collections.sort(liste);//[1, 3, 9, 23]
         System.out.println(liste);
         
 
