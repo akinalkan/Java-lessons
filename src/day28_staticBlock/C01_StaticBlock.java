@@ -12,7 +12,7 @@ public class C01_StaticBlock {
         static variable'lara deger atamak icin kullanilir
 
         static block'larin class icerisinde nerede oldugu onemli degildir
-        Onece static bloklar calisir
+        Once static bloklar calisir
 
         birden fazla static block varsa yukaridan asagi dogru calisir
 
