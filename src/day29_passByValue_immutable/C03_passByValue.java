@@ -18,16 +18,20 @@ public class C03_passByValue {
         list.add("Ali");
         list.add("Veli");
         list.add("Can");
-        System.out.println("ilk basta list : " + list); // [Ali, Veli, Can]
-        elemanlariDegistir(list);
-        System.out.println("eleman degistir methodundan sonra list : " + list);
-        // [ Oguz, Murat, Fatih]
-        listDegistir(list);
-        System.out.println("list degistir methodundan sonra list : " + list);
-        // [ Oguz, Murat, Fatih]
+
+        System.out.println("ilk basta list : " + list); // ilk basta list : [Ali, Veli, Can]
+
+        elemanlariDegistir(list);//eleman degistir methodunda : [Oguz, Murat, Fatih]
+
+        System.out.println("eleman degistir methodundan sonra list : " + list);//eleman degistir methodundan sonra list : [Oguz, Murat, Fatih]
+
+        listDegistir(list);//list degistir methodunda : [Nutella, Cay, Cokokrem]
+
+        System.out.println("list degistir methodundan sonra list : " + list);//list degistir methodundan sonra list : [Oguz, Murat, Fatih]
+
     }
     public static void listDegistir(List<String> list) {
-        list=new ArrayList<>();
+        list=new ArrayList<>();//------------------------------------------>>>>list adinda yeni list olusturuldu
         list.add("Nutella");
         list.add("Cay");
         list.add("Cokokrem");

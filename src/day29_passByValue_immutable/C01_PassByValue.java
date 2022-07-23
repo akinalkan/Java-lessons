@@ -13,15 +13,15 @@ public class C01_PassByValue {
          */
 
         int []arr={5,7,8,10};
-        System.out.println("ilk array : "+Arrays.toString(arr));
+        System.out.println("ilk array : "+Arrays.toString(arr));//ilk array : [5, 7, 8, 10]
 
         //int sayi=10;
        // System.out.println("ilk sayi degeri : "+sayi);
         //sayiDegisim(sayi);
         //System.out.println("method sonrasi : "+sayi);
 
-        elemanDegistir(arr);
-        System.out.println("main method'un icerisinde \ndiger method calistiktan sonra : "+Arrays.toString(arr));
+        elemanDegistir(arr);//method'un icinde : [5, 97, 8, 87]
+        System.out.println("main method'un icerisinde \ndiger method calistiktan sonra array : "+Arrays.toString(arr));//[5, 97, 8, 87]
     }
 /*
     public static void sayiDegisim(int sayi) {

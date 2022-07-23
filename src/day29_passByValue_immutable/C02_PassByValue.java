@@ -32,17 +32,17 @@ public class C02_PassByValue {
          */
 
         int[] arr={3,5,8,10};
-        System.out.println("array'in ilk hali :  "+Arrays.toString(arr));
+        System.out.println("array'in ilk hali :  "+Arrays.toString(arr));//array'in ilk hali :  [3, 5, 8, 10]
 
-        arrayiDegistir(arr);
-        System.out.println("method'dan sonra array ; "+ Arrays.toString(arr));
+        arrayiDegistir(arr);//method'da array ; [13, 30, 38]
+        System.out.println("method'dan sonra array ; "+ Arrays.toString(arr));//method'dan sonra array ; [3, 5, 8, 10]
 
 
     }
 
     public static void arrayiDegistir(int[] arr) {
 
-        arr=new int[3];
+        arr=new int[3];//------------------------------------>>arr isminde yeni array olusturuldu
         Random rnd=new Random();
         arr[0]=rnd.nextInt(100);
         arr[1]=rnd.nextInt(100);
