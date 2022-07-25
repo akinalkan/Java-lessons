@@ -18,6 +18,7 @@ public class C08_equals {
         urunler2.add("Cay");
         urunler2.add("Cekirdek");
         System.out.println(urunler.equals(urunler2));//false
+        System.out.println(urunler.get(0).equals(urunler2.get(1)));//true  Nutella<-->Nutella
         Collections.sort(urunler);
         Collections.sort(urunler2);
 

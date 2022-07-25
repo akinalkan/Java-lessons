@@ -7,7 +7,7 @@ public class C05_StringVsStringBuilder {
 
         /*
         String'mi yoksa StringBuilder'mi daha hizlidir.
-        Bunun icin bir String olusturup 1000 kez sonun anokta ekleyelim
+        Bunun icin bir String olusturup 1000 kez sonuna nokta ekleyelim
         Oncesinde ve sonrasinda zamani alip aradaki farki bulalim
 
         Ayni islemi String Builder icin de yapalim
@@ -28,7 +28,7 @@ public class C05_StringVsStringBuilder {
 
         LocalTime baslangic1=LocalTime.now();
 
-        StringBuilder sb=new StringBuilder("Ahhhh Java");
+        StringBuilder sb=new StringBuilder("Ahhhh Java");//StringBuilder yontemi ile sb olusturuldu
         for (int i = 0; i <10000 ; i++) {
             sb.append(".");
 
@@ -38,7 +38,7 @@ public class C05_StringVsStringBuilder {
         System.out.println("bitis1 = " + bitis1);
         System.out.println(bitis1.getNano()-baslangic1.getNano());
 
-        System.out.println((int)(bitis.getNano()-baslangic.getNano())/(bitis1.getNano()-baslangic1.getNano()));
+        System.out.println("String ,StringBuilder'in "+(int)(bitis.getNano()-baslangic.getNano())/(bitis1.getNano()-baslangic1.getNano())+" kati kadar zaman alir");
 
 
 

@@ -6,7 +6,7 @@ public class C05_DoWhileLoop {
             9'dan 190'a kadar 7^nin kati olan tum tam sayilari ekrana yazdiriniz
             */
 
-        int bas=9;;
+        int bas=9;
         int bitis=190;
 
         int temp=bas;
@@ -42,6 +42,7 @@ public class C05_DoWhileLoop {
                 System.out.print(i+" ");
             }
         }
+
 
     }
 }

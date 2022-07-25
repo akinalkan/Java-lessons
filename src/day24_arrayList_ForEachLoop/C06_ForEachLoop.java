@@ -13,8 +13,7 @@ public class C06_ForEachLoop {
 
         //array'deki tum elemanlari inceleyelim ,tek sayi olanlari list'e atayalim
 
-        for (int each:arr // gelecek datalari turu,loop icinde ne isim verdigim ve nereden aldigim
-             ) {
+        for (int each:arr) { // gelecek datalari turu,loop icinde ne isim verdigim ve nereden aldigim
             if(each%2==1){
                 liste.add(each);
             }

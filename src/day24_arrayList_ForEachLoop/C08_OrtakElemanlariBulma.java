@@ -11,8 +11,7 @@ public class C08_OrtakElemanlariBulma {
     /*
           Soru 3:
         iki String array olusturunuz ve bu array’lerdeki ortak elemanlari For
-        each loop
-        kullanarak bulunuz. Sonucu ekrana yazdiriniz.
+        each loop kullanarak bulunuz.Sonucu ekrana yazdiriniz.
         Ortak eleman yoksa ekrana “Ortak eleman yok” yazdiriniz
      */
 
@@ -20,10 +19,8 @@ public class C08_OrtakElemanlariBulma {
     String[] arr2 = {"Ali", "Hasan", "Ayse", "Enes"};
 
     List<String> ortakIsimler = new ArrayList<>();
-        for (String each1 :arr1
-             ) {
-            for (String each2:arr2
-                 ) {
+        for (String each1 :arr1) {
+            for (String each2:arr2) {
 
                 if(each1.equalsIgnoreCase(each2)){
                     ortakIsimler.add(each1);

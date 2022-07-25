@@ -42,7 +42,7 @@ public class C03_Date {
 
         System.out.println(tarih.isAfter(tarih3));//true
 
-        Period age=Period.between(tarih3,tarih);
+        Period age=Period.between(tarih3,tarih);//iki tarih arasini hesaplamak icin kullanilan method
 
         System.out.println(age);//P40Y27D
 
