@@ -2,7 +2,7 @@ package day31_timeFormatter_varargs;
 
 public class C02_Varargs {
     public static void main(String[] args) {
-        // 2 int'i toplayip sonucu yazdiran vir method olusturun
+        // 2 int'i toplayip sonucu yazdiran bir method olusturun
         int sayi1=10;
         int sayi2=20;
         int sayi3=30;

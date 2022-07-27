@@ -1,11 +1,19 @@
 package day20_Arrays;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class C02_Arrays {
+
+
+
     public static void main(String[] args) {
 
+
+
         int sayilar[]=new int[3];
+
         int sayiciklar[]=new int[5];
         sayiciklar[0]=1;
         sayiciklar[1]=11;
@@ -14,7 +22,7 @@ public class C02_Arrays {
         sayiciklar[4]=11111;
 
 
-        System.out.println(Arrays.toString(sayiciklar));
+        System.out.println(Arrays.toString(sayiciklar));//[1, 11, 111, 1111, 11111]
         System.out.println(sayilar);//[I@1b28cdfa
         /*
         non-primitive data turundeki data'lari her zaman direkt yazdiramayiz
@@ -27,7 +35,7 @@ public class C02_Arrays {
         sayilar[1]=3;
         System.out.println(Arrays.toString(sayilar));//{5,3,10}
 
-        String sinifList[]={"Ali","Ayse","Ahmet"};
+        String[] sinifList ={"Ali","Ayse","Ahmet"};
         System.out.println(Arrays.toString(sinifList));//[Ali, Ayse, Ahmet]
         Arrays.sort(sinifList);
         System.out.println(Arrays.toString(sinifList));//[Ahmet, Ali, Ayse]
@@ -37,13 +45,7 @@ public class C02_Arrays {
         System.out.println(sinifList[0]);//Ahmet
 
 
-
-
-
-
-
-
-
     }
+
 }
 

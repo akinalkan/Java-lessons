@@ -29,6 +29,5 @@ public class C01_List {
 
          set() sildigi eski elementi bize dondurur
          */
-
     }
 }

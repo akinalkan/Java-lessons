@@ -18,7 +18,7 @@ public class C05_VarargsParametreIleKullanma {
         new C05_VarargsParametreIleKullanma().Go(2,"Hello", "hi");
     }
     public void Go(int x, String... y){
-        System.out.print(y[y.length-x]+" ");
+        System.out.print(y[y.length-x]+" ");//Hello Hello
     }
 
 

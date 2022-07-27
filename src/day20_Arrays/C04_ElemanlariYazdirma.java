@@ -16,12 +16,6 @@ public class C04_ElemanlariYazdirma {
         for (int i = 0; i < sayilar.length; i++){
             System.out.print(sayilar[i]+" ");//1 2 3 4 5 6 7
 
-
-
-
-
-
-
         }
 
 

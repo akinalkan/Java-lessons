@@ -7,15 +7,15 @@ public class C03_leght {
 
         //iki sekilde Array olusturabiliriz
 
-        int sayilar[]={1,2,3};//Type-1
+        int[] sayilar ={1,2,3};//Type-1
 
-        String harfler[]=new String[4];//Type-2
+        String[] harfler =new String[4];//Type-2
         harfler[3]="A";
 
         System.out.println("sayilar array'in uzunlugu : "+sayilar.length);//3
         //String lengt() method'unda parantez var 'array'de yok
         System.out.println(harfler.length);//4
-        System.out.println(Arrays.toString(harfler));//[null, null, null, null]
+        System.out.println(Arrays.toString(harfler));//[null, null, null, A]
 
         /*
         harfler array'inin son elemntini yazdiralim

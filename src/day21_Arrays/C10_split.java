@@ -24,6 +24,6 @@ public class C10_split {
         System.out.println(Arrays.toString(kelimelerE));//[Java, n,  kadar guz, l.]
 
         String [] karakterler=str.split("");
-        System.out.println(Arrays.toString(karakterler));
+        System.out.println(Arrays.toString(karakterler));//[J, a, v, a, ,,  , n, e,  , k, a, d, a, r,  , g, u, z, e, l, .]
     }
 }

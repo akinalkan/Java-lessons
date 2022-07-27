@@ -9,6 +9,7 @@ public class C05_ArrayeElementEkleme {
     public static void main(String[] args) {
 
         String [] sinifListesi={"Ali Can","Nida Yucedal","Musa Yaman"};
+
         String eklenecekIsim="Murat Babayigit";
 
 
