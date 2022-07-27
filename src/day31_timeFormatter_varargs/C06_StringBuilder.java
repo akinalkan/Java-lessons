@@ -12,6 +12,7 @@ public class C06_StringBuilder {
         StringBuilder sb2=new StringBuilder(5);//---->>3.cesit
         sb2.append("kafa");
         sb2.append("ma gore");
+        sb2.append(" takiliyorum.");
         System.out.println(sb2);
 
 

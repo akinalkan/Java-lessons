@@ -5,7 +5,7 @@ public class C02_EnUzunveKisaKelime {
     Soru 2- Verilen String bir array’de en uzun ve en kisa String’leri yazdiran bir method olusturun
      */
     public static void main(String[] args) {
-        String [] isimler={"Erdal","Onur","Mehmet","Hayrullah","Mihrican"};;
+        String [] isimler={"Erdal","Onur","Mehmet","Hayrullah","Mihrican"};
 
         enUzunVeKisayiYazdir(isimler);
 

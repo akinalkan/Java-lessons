@@ -10,6 +10,7 @@ public class C03_leght {
         int sayilar[]={1,2,3};//Type-1
 
         String harfler[]=new String[4];//Type-2
+        harfler[3]="A";
 
         System.out.println("sayilar array'in uzunlugu : "+sayilar.length);//3
         //String lengt() method'unda parantez var 'array'de yok
@@ -20,7 +21,7 @@ public class C03_leght {
         harfler array'inin son elemntini yazdiralim
          */
         System.out.println((harfler)[harfler.length-1]);//harfler array'inin son elementi yazdirildi-->null
-        System.out.println(harfler[5]);//ArrayIndexOutOfBoundsException
+       // System.out.println(harfler[5]);//ArrayIndexOutOfBoundsException
 
 
 
