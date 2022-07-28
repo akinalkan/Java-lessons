@@ -18,6 +18,7 @@ public class C01_Mda {
         primitive data mi oldugudur
          */
         int[][] sayilar = {{1, 2, 4, 5}, {3, 4}};
+        int[] [] rakam={{0,1,2,3,4},{0,1,2}};
         /*
         burada sayilar arrayini dusunursek icinde 2 tane array var
         sayilar[0] ==> [1,2,4,5]
@@ -26,10 +27,14 @@ public class C01_Mda {
          */
 
         System.out.println(sayilar[0]);//[I@1b28cdfa
+        int[]  sayi12={1,2,3};
+        System.out.println(sayi12);
+
         System.out.println(Arrays.toString(sayilar[0]));//[1, 2, 4, 5]
         System.out.println(sayilar[0][1]);//2
         System.out.println(sayilar[1][0]);//3
         System.out.println(Arrays.toString(sayilar));//[[I@1b28cdfa, [I@eed1f14]
+        System.out.println(Arrays.deepToString(rakam));
         System.out.println(Arrays.deepToString(sayilar));//[[1, 2, 4, 5], [3, 4]]
 
         /*
