@@ -37,4 +37,14 @@ public class Bina {
     public void setDepremeDayanikliMi(boolean depremeDayanikliMi) {
         this.depremeDayanikliMi = depremeDayanikliMi;
     }
+
+    @Override
+    public String toString() {
+        return "Bina{" +
+                "malzeme='" + malzeme + '\'' +
+                ", isim='" + isim + '\'' +
+                ", yas=" + yas +
+                ", depremeDayanikliMi=" + depremeDayanikliMi +
+                '}';
+    }
 }

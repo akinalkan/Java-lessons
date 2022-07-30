@@ -17,6 +17,7 @@ public class C03_leght {
         System.out.println(harfler.length);//4
         System.out.println(Arrays.toString(harfler));//[null, null, null, A]
 
+
         /*
         harfler array'inin son elemntini yazdiralim
          */

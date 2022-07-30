@@ -1,6 +1,7 @@
 package day23_ArrayLists;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class C01_List {
@@ -12,7 +13,7 @@ public class C01_List {
         sayilar1.add(2);
 
         System.out.println("Listenin boyutu : "+sayilar1.size());//Listenin boyutu : 3
-        sayilar1.add(2);
+        sayilar1.add(2);//[5,3,2,2]
         sayilar1.addAll(sayilar1);
         System.out.println(sayilar1);//[5, 3, 2, 2, 5, 3, 2, 2]
         System.out.println("Listenin yeni boyutu : "+sayilar1.size());//Listenin yeni boyutu : 8
@@ -29,5 +30,7 @@ public class C01_List {
 
          set() sildigi eski elementi bize dondurur
          */
+        Integer[] arr=sayilar1.toArray(new Integer[0]);//sayilar1 list'i arr arrayine cevirildi
+        System.out.println("arr arrayi yazdirildi : "+Arrays.toString(arr));
     }
 }

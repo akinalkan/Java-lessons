@@ -10,11 +10,13 @@ public class C08_addAll {
         sayilar1.add(5);
         sayilar1.add(3);
         sayilar1.add(2);
+        System.out.println("sayilar1 = " + sayilar1);//sayilar1 = [5, 3, 2]
         List<Integer> sayilar2=new ArrayList<>();
         sayilar2.add(10);
         sayilar2.add(15);
         sayilar2.add(16);
         sayilar2.add(20);
+        System.out.println("sayilar2 = " + sayilar2);//sayilar2 = [10, 15, 16, 20]
         sayilar1.addAll(sayilar2);
 
         System.out.println(sayilar1);//[5, 3, 2, 10, 15, 16, 20]

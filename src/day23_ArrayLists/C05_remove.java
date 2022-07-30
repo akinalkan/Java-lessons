@@ -13,6 +13,8 @@ public class C05_remove {
         sayilar1.add(1);
 
         System.out.println(sayilar1);// [5, 3, 2, 1]
+        int sayi=1;
+        sayilar1.remove(sayi);
 
         sayilar1.remove(1);
 

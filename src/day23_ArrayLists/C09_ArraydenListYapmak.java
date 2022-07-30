@@ -53,6 +53,9 @@ public class C09_ArraydenListYapmak {
         System.out.println("sayilar :"+sayilar);
         System.out.println("array'de degisiklik yapinca sayilar2 :"+sayilar2);
 
+        Integer[] arr3=sayilar.toArray(new Integer[0]);//sayilar listi arr3 arrayine donustu
+        System.out.println("arr3 array : "+Arrays.toString(arr3));
+
 
 
 

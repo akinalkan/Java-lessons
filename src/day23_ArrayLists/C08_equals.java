@@ -11,12 +11,14 @@ public class C08_equals {
         urunler.add("Ikram");
         urunler.add("Cekirdek");
         urunler.add("Cay");
+        System.out.println(urunler);
 
         List<String> urunler2=new ArrayList<>();
         urunler2.add("Ikram");
         urunler2.add("Nutella");
         urunler2.add("Cay");
         urunler2.add("Cekirdek");
+        System.out.println(urunler2);
         System.out.println(urunler.equals(urunler2));//false
         System.out.println(urunler.get(0).equals(urunler2.get(1)));//true  Nutella<-->Nutella
         Collections.sort(urunler);

@@ -12,12 +12,12 @@ public class C02_set {
          eski urunu ,var olan eski urunler listesine ekleyelim
          */
 
-        List<String> urunler=new ArrayList<>();
+        List<String> urunler=new ArrayList<>();//[]
         urunler.add("Nutella");
         urunler.add("Ikram");
         urunler.add("Cekirdek");
         urunler.add("Cay");
-        System.out.println("ilk urunler listesi : "+urunler);
+        System.out.println("ilk urunler listesi : "+urunler);//ilk urunler listesi : [Nutella, Ikram, Cekirdek, Cay]
 
 
         List<String> eskiurunler=new ArrayList<>();
@@ -33,7 +33,7 @@ public class C02_set {
         String silinenUrun=urunler.set(temp,yeniUrun);
 
         eskiurunler.add(silinenUrun);
-        System.out.println("urunler listesi : "+urunler);
+        System.out.println("urunler listesi : "+urunler);//urunler listesi : [Nutella, Biskrem, Cekirdek, Cay]
         System.out.println("eski urunler listesi : "+eskiurunler);
         System.out.println();
 

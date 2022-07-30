@@ -13,6 +13,7 @@ public class BinaRunner {
                 +bina1.getMalzeme()+"\n"+bina1.getYas()+
                 "\n"+bina1.isDepremeDayanikliMi());
 
+        System.out.println("bina1.toString() = " + bina1.toString());
 
 
     }
