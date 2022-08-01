@@ -11,12 +11,15 @@ public class EYanHizmetliler extends BMuhasebe {
     protected void issizlikSigorta(){
         System.out.println("Yan Hizmetliler %30 indirimli issizlik sigortasi yaptirabilir");
     }
+    protected void izin(){
+        System.out.println("Ayda 20 gun yan hizmetli izin kullanir");
+    }
 
     public static void main(String[] args) {
 
         /*
-        Overriding child class;taki bir method'un
-        parent class'taki ayni isimdeki method'uetkisiz
+        Overriding child classtaki bir method'un
+        parent class'taki ayni isimdeki method'u etkisiz
         hale getirerek kendisinin spesifik ozelligini
         ortaya cikarmasidir
 
@@ -52,6 +55,9 @@ public class EYanHizmetliler extends BMuhasebe {
         System.out.println(yh1.departman);//-->Personel
         //System.out.println(yh1.issizlikSigorta);
         //Aramaya Muhasebeden basladigimizdan issizlik sigortasi bulamadik..CTE
+        EYanHizmetliler yh2=new EYanHizmetliler();
+
+        yh2.izin();//Ayda 20 gun yan hizmetli izin kullanir
 
 
 

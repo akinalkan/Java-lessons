@@ -33,7 +33,7 @@ public class DIsci extends BMuhasebe{
          */
         System.out.println(isc1.gunlukMesai);//8-->Muhasebeden alir
         System.out.println(isc1.saatUcreti);//10-->Muhasebeden alir
-        isc1.maas();//-->Muhasebeden alirPersonel minumum : 2400 maas alir
+        isc1.maas();//-->BMuhasebeden alir Personel minumum : 2400 maas alir
         isc1.ozelSigorta();//-->Muhasebeden alir  isteyen calisanlara %50 indirimli ozel sigorta yapilir
         isc1.sigorta();//-->Personelden alir Tum personelimiz sigorta yapilir
         System.out.println(isc1.isim);//-->Personelden alir

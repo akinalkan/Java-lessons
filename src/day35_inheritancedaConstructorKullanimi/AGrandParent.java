@@ -1,6 +1,6 @@
 package day35_inheritancedaConstructorKullanimi;
 
-public class AGrandParent {
+public class AGrandParent  {
 
     protected String isim="Grandpa ismi belirtilmedi";
 

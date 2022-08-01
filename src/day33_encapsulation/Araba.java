@@ -19,4 +19,5 @@ public class Araba {
     public String getYakit() {
         return yakit;
     }
+
 }
