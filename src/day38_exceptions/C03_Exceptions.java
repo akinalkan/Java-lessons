@@ -46,13 +46,14 @@ public class C03_Exceptions {
                     istenenSira=scan.nextInt();
                 } catch (InputMismatchException deneme) {//----------------->2-)yakalanacak exc. turu ve icine konulacak obje
                     System.out.println("Urun index'i icin bir tamsayi girmelisiniz");//--->3-)catch blogu yakalaninca
-                    System.out.println("deneme = " + deneme);                                                 // ne yapilacagimiz yazar
+                    System.out.println("deneme = " + deneme);       // ne yapilacagimiz yazar
 
                 }
             }else break;
 
         try {
             System.out.println("urunler[istenenSira] = " + urunler[istenenSira-1]);
+            break;
         } catch (ArrayIndexOutOfBoundsException e) {
 
             System.out.println("Lutfen sira hmmm");
