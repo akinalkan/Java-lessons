@@ -4,7 +4,7 @@ public class C01_Exceptions {
     public static void main(String[] args) {
 
         /*
-        Bir sorun;la karsilasmayi bekledigimiz noktalarda
+        Bir sorunla karsilasmayi bekledigimiz noktalarda
         if else ile sorunu yakalayip
         onunla ilgilenebilirsiniz
 

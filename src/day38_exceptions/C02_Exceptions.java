@@ -17,7 +17,7 @@ exception turunu JAVA'ya soylemek icin kullanilir
 catch blogu JAVA'ya soyledigimiz exception(istisnai durum) gerceklesirse
 Java'nin yapmasini istedigimiz islem.
 
-catch blogunun onuneki paranteze karsilasmayi bekledigimiz exception'i yazabilir
+catch blogunun onundeki paranteze karsilasmayi bekledigimiz exception'i yazabilir
 veya her turlu exception'da devreye girmesini istiyorsak
 tum exception'larin parent'i olan Exception yazabiliriz
 

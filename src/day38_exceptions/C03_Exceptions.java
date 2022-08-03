@@ -27,7 +27,7 @@ public class C03_Exceptions {
              istenenSira=scan.nextInt();
         } catch (InputMismatchException deneme) {//----------------->2-)yakalanacak exc. turu ve icine konulacak obje
             System.out.println("Urun index'i icin bir tamsayi girmelisiniz");//--->3-)catch blogu yakalaninca
-            System.out.println("deneme = " + deneme);                                                 // ne yapilacagimiz yazar
+            System.out.println("deneme = " + deneme);                             // ne yapacagimiz yazar
 
         }
         /*
@@ -42,11 +42,12 @@ public class C03_Exceptions {
          */
             if(istenenSira!=0||istenenSira!=1 ||istenenSira!=2 ||istenenSira!=3 ){
                 System.out.println("Lutfen tekrar deneyiniz");
-                try {//------------------------------------->>1-)risk olan kismi yazar
+                try {
                     istenenSira=scan.nextInt();
-                } catch (InputMismatchException deneme) {//----------------->2-)yakalanacak exc. turu ve icine konulacak obje
-                    System.out.println("Urun index'i icin bir tamsayi girmelisiniz");//--->3-)catch blogu yakalaninca
-                    System.out.println("deneme = " + deneme);       // ne yapilacagimiz yazar
+
+                } catch (InputMismatchException deneme) {
+                    System.out.println("Urun index'i icin bir tamsayi girmelisiniz");
+                    System.out.println("deneme = " + deneme);
 
                 }
             }else break;

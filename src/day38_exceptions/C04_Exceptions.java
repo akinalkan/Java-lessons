@@ -9,19 +9,22 @@ public class C04_Exceptions {
         System.out.print("Istediginiz urunun sira no'sunu giriniz : ");
 
 
-        int istenenSira=0;
-        while (true){
+        String istenenSira="";
+        while (true) {
+            int siraNo = 0;
             try {
-                istenenSira= scan.nextInt();
+                istenenSira = scan.nextLine();
+                siraNo = Integer.parseInt(istenenSira);
+
             } catch (Exception e) {
-                System.out.println("girilen index degeri hatali");
+
             }
 
-            if(istenenSira> urunler.length && istenenSira<=0){
+            if (siraNo > urunler.length && siraNo <= 0) {
                 System.out.println("lutfen listeden bir urun seciniz");
-            }else{
+            } else {
                 try {
-                    System.out.println("istene urun : "+urunler[istenenSira-1]);
+                    System.out.println("istene urun : " + urunler[siraNo - 1]);
                     break;
                 } catch (Exception e) {
                     System.out.println("girilen index degeri hatali");
