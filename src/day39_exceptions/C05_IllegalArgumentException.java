@@ -23,7 +23,7 @@ public class C05_IllegalArgumentException {
             }
         } catch (IllegalArgumentException e) {
            e.printStackTrace();
-            System.err.println("\t*****Yas negatif olamaz*****");
+            System.out.println("\t*****Yas negatif olamaz*****");
         }
 
 
