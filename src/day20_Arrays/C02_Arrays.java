@@ -45,6 +45,7 @@ public class C02_Arrays {
         System.out.println(sinifList[0]);//Ahmet
 
 
+
     }
 
 }

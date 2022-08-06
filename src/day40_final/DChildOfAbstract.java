@@ -18,4 +18,5 @@ public  class DChildOfAbstract extends CAbstract {
     void bolme() {
 
     }
+
 }
