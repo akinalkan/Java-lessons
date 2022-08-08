@@ -16,8 +16,8 @@ public class C01_AbstractClassOzet {
 
     4-Abstract class zincirinden sonra gelen ilk concerete class,
     parent'larinda bulunan ve concerete olmayan
-    tum methodlari override etmek zorundadir.Ancak paretn abstract
-     class'larda bulunan concerete methodlari override etmek zorunda degildir
+    tum methodlari override etmek zorundadir.Ancak parent abstract
+     class'larda bulunan concerete methodlari override etmek zorunda degildir.
 
     5- Abstract bir class'in abstract child'i parent'daki
     abstract methodlari override etmek zorunda degildir

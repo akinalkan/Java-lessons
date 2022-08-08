@@ -13,6 +13,8 @@ public class C04_Immutable {
 
 
         String str="Yildiz Bank";
+
+        System.out.println(str);//Yildiz Bank
         System.out.println(str.toUpperCase());//YILDIZ BANK
 
         str.toLowerCase();
@@ -29,6 +31,7 @@ public class C04_Immutable {
         System.out.println(sb);//Java Bank
 
         sb.reverse();
+
         System.out.println(sb);//knaB avaJ
 
         sb.append(".");

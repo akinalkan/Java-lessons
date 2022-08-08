@@ -24,7 +24,7 @@ public interface I02_Interfaces {
 
     3- Class'larda bir child birden fazla parent edinemez
         Ancak Interface'lerde concrete method olmadigindan biz
-        her method'u child class'dan ovwerride etmek zorundayiz
+        her method'u child class'dan override etmek zorundayiz
         Override ederken kimin soyledigini override ettigimizin onemi yok.
 
     4- Interface'ler neyin yapilmasi gerektigini soyler
