@@ -21,10 +21,12 @@ public class M04_ListIterator {
         ListIterator lit1=list.listIterator();
 
 
+
         while (lit1.hasNext()){
             temp=(Integer) lit1.next();
             temp+=3;
             lit1.set(temp);
+
 
         }
         System.out.println(list);//[13, 23, 33]
