@@ -1,10 +1,10 @@
 Git notlari
 git add -A
-git commit -m"day09_Ternary"
+git commit -m"day46"
 git push
 
 
-
+fatal: name consists only of disallowed characters:
 
 Import from Intellij to Github
 Click -->>

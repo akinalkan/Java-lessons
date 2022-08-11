@@ -9,7 +9,7 @@ public class C02_CollectionsDataTuru {
     public static void main(String[] args) {
         /*
         Collections <dataTuru> nu Object secmeniz durumunda
-        Collection'a farkli data turlerinda objeler koymaniza izin verir
+        Collection'a farkli data turlerinde objeler koymaniza izin verir
         Bu depolama acisindan bize esneklik saglar
         Ancak islem yaparken tum objeleri Object olarak tanimladigimizdan cok
         fazla casting yapmak zorunda kalabiliriz

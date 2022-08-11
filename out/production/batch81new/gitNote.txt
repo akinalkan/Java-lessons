@@ -4,7 +4,7 @@ git commit -m"day09_Ternary"
 git push
 
 
-
+fatal: name consists only of disallowed characters:
 
 Import from Intellij to Github
 Click -->>
