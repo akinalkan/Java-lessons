@@ -16,6 +16,8 @@ public class C05_EntryUpdate {
 
         Set<Map.Entry<Integer,String>> entrySeti=sinifListMap.entrySet();
         System.out.println("entrySeti = " + entrySeti);
+
+
         String entryValue;
         String[] entryArr;
         for (Map.Entry<Integer,String> entry:entrySeti) {
