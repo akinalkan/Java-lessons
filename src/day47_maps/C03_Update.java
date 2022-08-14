@@ -21,6 +21,7 @@ public class C03_Update {
           */
 
         Map<Integer,String> sinifListMap= ReusableMethods.mapOlustur();
+       // System.out.println("sinifListMap.get(101) = " + sinifListMap.get(101));
         System.out.println(sinifListMap);
         //{101=Ali, Can, JDev, 102=Enes, Cem, Tester, 103=Taha, Emre, JDev, 104=Derya, Deniz, Devops, 105=Enes, Can, Tester, 106=Taha, Deniz, Tester, 107=Derya, Cem, Tester}
         System.out.println(sinifListMap.containsKey(104));//true
@@ -65,6 +66,7 @@ public class C03_Update {
              */
         }
         System.out.println(sinifListMap);//2.durum
+
 
 
     }

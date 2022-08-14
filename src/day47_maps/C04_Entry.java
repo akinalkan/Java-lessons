@@ -2,7 +2,6 @@ package day47_maps;
 
 import day46_maps.ReusableMethods;
 
-import javax.print.attribute.standard.RequestingUserName;
 import java.util.Map;
 import java.util.Set;
 
@@ -27,7 +26,9 @@ public class C04_Entry {
 
         //map'in herbir elemani alt alta yazdirin
 
-        Set<Map.Entry<Integer,String>> sinifEntrySet=sinifListMap.entrySet();
+        Set<Map.Entry<Integer, String>> sinifEntrySet=sinifListMap.entrySet();
+        System.out.println(sinifEntrySet);
+
 
         for (Map.Entry<Integer,String> each:sinifEntrySet) {
             System.out.println(each);
