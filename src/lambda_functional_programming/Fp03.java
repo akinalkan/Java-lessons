@@ -109,7 +109,7 @@ public class Fp03 {
  //      System.out.println(list);
  //  }
 
-//8) Uzunluğu 8 ile 10 arası olan yada 'o' ile biten elemanları yazdıran bir method oluşturun.
+//8) Uzunluğu 8 ile 10 arası olan yada 'o' ile biten elemanları silen bir method oluşturun.
     public static void uzunlugu8Ile10ArasiVeOIleBiteniSil(List<String>list){
         list.removeIf(t->(t.length()>7 && t.length()<11 )||t.endsWith("o"));
         System.out.println(list);
