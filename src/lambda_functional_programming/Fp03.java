@@ -35,7 +35,9 @@ public class Fp03 {
         uzunlukveIlkHarfeGoreSiralaYazdir(liste);
         System.out.println();
         // bestenBuyukleriSil(liste);
-        baslangiciAYadaSonuNOlaniSil(liste);
+        //baslangiciAYadaSonuNOlaniSil(liste);
+      //  baslangiciAYadaSonuNOlaniSil2(liste);
+        uzunlugu8Ile10ArasiVeOIleBiteniSil(liste);
 
 
     }
@@ -96,9 +98,20 @@ public class Fp03 {
 //
 //    }
     //7) ‘A’, ‘a’ ile başlayan yada ‘N’, ‘n’ ile biten elemanları silen bir method oluşturun.
-    public static void baslangiciAYadaSonuNOlaniSil(List<String> list) {
-        list.removeIf(t -> t.charAt(0) == 'A' || t.charAt(0) == 'a' || t.charAt(t.length() - 1) == 'N' || t.charAt(t.length() - 1) == 'n');
+    //1.Yol
+ //   public static void baslangiciAYadaSonuNOlaniSil(List<String> list) {
+ //       list.removeIf(t -> t.charAt(0) == 'A' || t.charAt(0) == 'a' || t.charAt(t.length() - 1) == 'N' || t.charAt(t.length() - 1) == 'n');
+ //       System.out.println(list);
+ //   }
+    //2.Yol
+ //  public static void baslangiciAYadaSonuNOlaniSil2(List<String> list) {
+ //      list.removeIf(t -> t.startsWith("a")||t.startsWith("A")||t.endsWith("n")||t.endsWith("N"));
+ //      System.out.println(list);
+ //  }
+
+//8) Uzunluğu 8 ile 10 arası olan yada 'o' ile biten elemanları yazdıran bir method oluşturun.
+    public static void uzunlugu8Ile10ArasiVeOIleBiteniSil(List<String>list){
+        list.removeIf(t->(t.length()>7 && t.length()<11 )||t.endsWith("o"));
         System.out.println(list);
     }
-
 }
