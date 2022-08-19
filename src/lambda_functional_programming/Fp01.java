@@ -159,7 +159,7 @@ public class Fp01 {
                 filter(t -> t > 7).
                 sorted().
                 findFirst().get();//findFirst().get()==> bu ikisi birlikte
-                                                                                                            // kullanilir ve ilk elemani verir.
+                                    // kullanilir ve ilk elemani verir.
         System.out.println("min = " + min);
     }
     //10) Ters sıralama ile tekrarsız ve 5'ten büyük elemanların yarı değerlerini(elamanın ikiye bölüm sonucunu) bulan bir method oluşturun.
