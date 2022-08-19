@@ -41,6 +41,19 @@ public class Utils {
     public static double yarisiniAl(int x){
         return x/2.0;
     }
+    public static String sonKarakteriAl(String str){
+        String son ="";
+        String[] arr=str.split("");
+        son=arr[str.length()-1];
+
+        return son;
+    }
+    public static  char sonKarakter2(String str){
+        return str.charAt(str.length()-1);
+    }
+    public static  char ilkKarakterAl(String str){
+        return str.charAt(0);
+    }
 
 
 }
