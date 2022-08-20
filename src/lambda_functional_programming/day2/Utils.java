@@ -54,6 +54,17 @@ public class Utils {
     public static  char ilkKarakterAl(String str){
         return str.charAt(0);
     }
+    public static int sayininRakamlarToplami(int sayi){
+        int rakamlarToplami=0;
+
+        while (sayi>0){
+            rakamlarToplami+=sayi%10;
+            sayi/=10;
+
+
+        }
+        return rakamlarToplami;
+    }
 
 
 }

@@ -38,7 +38,10 @@ public class Fp03 {
         //baslangiciAYadaSonuNOlaniSil(liste);
       //  baslangiciAYadaSonuNOlaniSil2(liste);
         uzunlugu8Ile10ArasiVeOIleBiteniSil(liste);
-
+        System.out.println();
+        System.out.println("Tum elemanlar uzunlugu 12 den az mi? "+uzunlugu12denAzMi(liste));
+        System.out.println("x ile baslayan var mi? = " + xIleBaslayanVarMi(liste));
+        System.out.println("r ile biten var mi? = " + rIleBitiyorMu(liste));
 
     }
 
@@ -113,5 +116,17 @@ public class Fp03 {
     public static void uzunlugu8Ile10ArasiVeOIleBiteniSil(List<String>list){
         list.removeIf(t->(t.length()>7 && t.length()<11 )||t.endsWith("o"));
         System.out.println(list);
+    }
+    //9) Tüm elemanların uzunluklarının 12'den az olup olmadığını kontrol eden bir method oluşturun.
+    public static boolean uzunlugu12denAzMi (List<String> list){
+        return list.stream().allMatch(t->t.length()<12);//allMatch==>tum elemanlar istenen kosula uyar mi?
+    }
+    //10) Hiçbir elemanın 'X' ile başlamadığını kontrol eden bir method oluşturun.
+    public static boolean xIleBaslayanVarMi (List<String>list){
+        return list.stream().noneMatch(t->!t.startsWith("X"));
+    }
+    //11) Herhangi bir elemanın 'r' ile bitip bitmediğini kontrol eden bir method oluşturun.
+    public static boolean rIleBitiyorMu (List<String>list){
+        return list.stream().anyMatch(t->t.endsWith("r"));
     }
 }
