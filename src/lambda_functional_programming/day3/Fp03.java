@@ -1,4 +1,4 @@
-package lambda_functional_programming;
+package lambda_functional_programming.day3;
 
 import lambda_functional_programming.day2.Utils;
 

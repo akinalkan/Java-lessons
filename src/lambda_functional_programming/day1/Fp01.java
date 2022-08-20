@@ -1,4 +1,4 @@
-package lambda_functional_programming;
+package lambda_functional_programming.day1;
 
 import java.util.ArrayList;
 import java.util.Comparator;
