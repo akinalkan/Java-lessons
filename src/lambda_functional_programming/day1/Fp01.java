@@ -3,6 +3,7 @@ package lambda_functional_programming.day1;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class Fp01 {
@@ -23,7 +24,9 @@ public class Fp01 {
         liste.add(10);
         liste.add(2);
         liste.add(8);
-        System.out.println(liste);
+        System.err.println(liste);
+
+
         listElemanlariniYazdirStructured(liste);
         System.out.println();
         listElemanlariniYazdirFunctional(liste);
@@ -44,6 +47,8 @@ public class Fp01 {
         getYedidenBuyukCiftMin(liste);
         minValue(liste);
         System.out.println();
+        minValue2(liste);
+        minValue3(liste);
         getYedidenBuyukCiftMin2(liste);
         getYedidenBuyukCiftMin3(liste);
         getTersSiralamaTekrarsizElemanlarinYarisi(liste);
@@ -54,14 +59,14 @@ public class Fp01 {
         for (Integer w : list) {
             System.out.print(w + " ");
             // methoddaki isim ne demek --> (List<Integer> list) bunu Integer bir list le çalış demek. bi list yok
-            // list yazan liste ismi ile farklı. list olan dinamik ne verirsen ver ismine mhmut ta olur.
+            // list yazan liste ismi ile farklı. list olan dinamik ne verirsen ver ismine mahmut'da olur.
         }
     }
 
     //1) Lambda ile, Ardışık list elementlerini aynı satırda aralarında boşluk bırakarak yazdıran bir method oluşturun.(Functional)
     public static void listElemanlariniYazdirFunctional(List<Integer> list) {
         list.stream().forEach(t -> System.out.print(t + " "));
-        // stream() methodu collection'dan elementleri dahil etmek için ve methodlara ulaşmak için kullnlr.
+        // stream() methodu collection'dan elementleri dahil etmek için ve methodlara ulaşmak için kullanilir.
     }
 
     //2) Java ile, Çift olan list elemanlarını aynı satırda aralarında boşluk bırakarak yazdıran bir method oluşturun.(Structured)
@@ -75,24 +80,27 @@ public class Fp01 {
 
     //2) Lambda ile, Çift olan list elemanlarını aynı satırda aralarında boşluk bırakarak yazdıran bir method oluşturun.(Functional)
     public static void ciftElemanlariYazdirFunctional(List<Integer> list) {
-        list.stream().filter(t -> t % 2 == 0).forEach(t -> System.out.print(t + " "));//filter(t ->t%2==0)===>if(t%2==0) ile ayni islem
+        list.stream().filter(t -> t % 2 == 0).forEach(t -> System.out.print(t + " "));
+        //filter(t ->t%2==0)===>if(t%2==0) ile ayni islem
     }
 
     //3) Lambda ile, Ardışık tek list elemanlarının karelerini aynı satırda aralarında boşluk bırakarak yazdıran bir method oluşturun.(Functional)
     public static void tekElemanlarinKareleriniYazdir(List<Integer> list) {
-        list.stream().filter(t -> t % 2 != 0).map(t -> t * t).forEach(t -> System.out.print(t + " "));//.map(t->t*t)==>t'leri t*t 'ler le degistirir
+        list.stream().filter(t -> t % 2 != 0).map(t -> t * t).forEach(t -> System.out.print(t + " "));
+        //.map(t->t*t)==>t'leri t*t 'ler le degistirir
         // listedeki değerler değişecekse map methodu kullanılır.
     }
 
     //4) Lambda ile, Ardışık tek list elemanlarının küplerini tekrarsız olarak aynı satırda aralarında boşluk bırakarak yazdıran bir method oluşturun.
     public static void tekrarsizTekElemanlarinKupunuYazdir(List<Integer> list) {
-        list.stream().distinct().filter(t -> t % 2 != 0).map(t -> t * t * t).forEach(t -> System.out.print(t + " "));//distinct()==> tekrarsiz olan elemanlari alir
+        list.stream().distinct().filter(t -> t % 2 != 0).map(t -> t * t * t).forEach(t -> System.out.print(t + " "));
+        //distinct()==> tekrarsiz olan elemanlari alir
     }
 
     //5) Lambda ile, Tekrarsız çift elemanların karelerinin toplamını hesaplayan bir method oluşturun.
     public static void tekrarsizCiftElemanlarinKareToplami(List<Integer> list) {
-        Integer toplam = list.stream().distinct().filter(t -> t % 2 == 0).map(t -> t * t).reduce(0, (t, u) -> t + u);//reduce(0,(t,u)->t+u)==>t=0
-        // baslangic degerini alir ona u lari ekler
+        Integer toplam = list.stream().distinct().filter(t -> t % 2 == 0).map(t -> t * t).reduce(0, (t, u) -> t + u);
+        //reduce(0,(t,u)->t+u)==>t=0 baslangic degerini alir ona u lari ekler
         //image (14).png
         System.out.print(toplam);
         // Toplama dediğimiz için 0 koyduk, Çarpma olsaydı 1 koyacaktık.
@@ -115,7 +123,7 @@ public class Fp01 {
 
     // 2.Yol:
     public static void getMaxEleman02(List<Integer> list) {
-        int max = list.stream().distinct().sorted().reduce(Integer.MIN_VALUE, (t, u) -> u);
+        Integer max = list.stream().distinct().sorted().reduce(Integer.MIN_VALUE, (t, u) -> u);
         System.out.println("max : " + max);
     }
 
@@ -126,6 +134,20 @@ public class Fp01 {
         Integer min = list.stream().distinct().reduce(list.get(0), (t, u) -> t < u ? t : u);
         System.out.print("Ödev_min = " + min);
     }
+    public static void minValue2(List<Integer> list){
+        int min=list.stream().distinct().sorted().findFirst().get();
+        System.out.println("Ödev_min-2.Yol = " + min);
+    }
+    public static void minValue3(List<Integer>list){
+        int min= list.get(0);
+        for (Integer w:list) {
+                    if(w<min){
+                        min=w;
+                    }
+        }
+        System.out.println("Ödev_min-3.Yol = " + min);
+    }
+
 
     //9) List elemanları arasından 7'den büyük, çift, en küçük değeri bulan bir method oluşturun.
     //1.Yol:
@@ -148,7 +170,8 @@ public class Fp01 {
                 filter(t -> t > 7).
                 sorted(Comparator.reverseOrder()).
                 reduce(Integer.MAX_VALUE, (t, u) -> u);
-        System.out.println("min = " + min);     //Comparator.reverseOrder()==>terstern siralam yapar[String'de olmaz ama StringBuilder'da kullanilir]
+        System.out.println("min = " + min);
+        //Comparator.reverseOrder()==>terstern siralam yapar[String'de olmaz ama StringBuilder'da kullanilir]
     }
     // 3.Yol:
     public static void getYedidenBuyukCiftMin3(List<Integer> list) {
@@ -158,8 +181,9 @@ public class Fp01 {
                 filter(t->t%2==0).
                 filter(t -> t > 7).
                 sorted().
-                findFirst().get();//findFirst().get()==> bu ikisi birlikte
-                                    // kullanilir ve ilk elemani verir.
+                findFirst().get();
+        //findFirst().get()==> bu ikisi birlikte kullanilir ve ilk elemani verir.
+
         System.out.println("min = " + min);
     }
     //10) Ters sıralama ile tekrarsız ve 5'ten büyük elemanların yarı değerlerini(elamanın ikiye bölüm sonucunu) bulan bir method oluşturun.

@@ -39,6 +39,7 @@ public class Fp03 {
       //  baslangiciAYadaSonuNOlaniSil2(liste);
         uzunlugu8Ile10ArasiVeOIleBiteniSil(liste);
         System.out.println();
+
         System.out.println("Tum elemanlar uzunlugu 12 den az mi? "+uzunlugu12denAzMi(liste));
         System.out.println("x ile baslayan var mi? = " + xIleBaslayanVarMi(liste));
         System.out.println("r ile biten var mi? = " + rIleBitiyorMu(liste));
@@ -81,7 +82,7 @@ public class Fp03 {
     public static void tekrarsizSonKaraktereGoreSiralama(List<String> list) {
         list.stream().distinct().sorted(Comparator.comparing(Utils::sonKarakteriAl)).forEach(Utils::print_);
     }
-
+    //2. Yol
     public static void tekrarsizSonKaraktereGoreSiralama2(List<String> list) {
         list.stream().distinct().sorted(Comparator.comparing(Utils::sonKarakter2)).forEach(Utils::print_);
     }
@@ -90,7 +91,8 @@ public class Fp03 {
     public static void uzunlukveIlkHarfeGoreSiralaYazdir(List<String> list) {
         list.
                 stream().
-                sorted(Comparator.comparing(String::length).thenComparing(Utils::ilkKarakterAl)).//thenComparing() :==>siralama icin bir kosul daha belirtir
+                sorted(Comparator.comparing(String::length).thenComparing(Utils::ilkKarakterAl)).
+                //thenComparing() :==>siralama icin bir kosul daha belirtir
                 forEach(Utils::print_);
     }
 

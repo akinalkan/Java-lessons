@@ -11,11 +11,14 @@ public class Fp05 {
         Courses courseTurkishNight = new Courses("Winter", "Turkish Night", 98, 154);
         Courses courseEnglishDay = new Courses("Spring", "English Day", 95, 132);
         Courses courseEnglishNight = new Courses("Winter", "English Night", 93, 144);
+        Courses courseWorldDay = new Courses("Summer","World Day",96,141);
         List<Courses> coursesList = new ArrayList<>();
         coursesList.add(courseTurkishDay);
         coursesList.add(courseTurkishNight);
         coursesList.add(courseEnglishDay);
         coursesList.add(courseEnglishNight);
+        coursesList.add(courseWorldDay);
+
 
         for ( Courses w:coursesList) {
             System.err.println(w+"\n ");

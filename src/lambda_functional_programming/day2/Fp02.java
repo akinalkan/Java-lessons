@@ -75,15 +75,16 @@ public class Fp02 {
     //5) Tekrarsız çift elemanların karelerinin toplamını hesaplayan bir method oluşturun.
     //1.Yol
     public static void tekrarsizCiftElemanlarinKarelerToplamiYazdir1(List<Integer> list) {
-        Integer toplam = list.stream().distinct().filter(Utils::ciftElemanlari).map(Utils::kareAl).reduce(0, Math::addExact);//addExact==>toplama yapar
-        //Integer toplam= list.stream().distinct().filter(Utils::ciftElemanlari).map(Utils::kareAl).reduce(Math::addExact).get();
+        Integer toplam = list.stream().distinct().filter(Utils::ciftElemanlari).map(Utils::kareAl).reduce(0, Math::addExact);
+        //Math::addExact==>toplama yapar
+        //2. yol==> Integer toplam= list.stream().distinct().filter(Utils::ciftElemanlari).map(Utils::kareAl).reduce(Math::addExact).get();
         System.out.println("toplam-1 = " + toplam);
     }
 
     //2.Yol
     public static void tekrarsizCiftElemanlarinKarelerToplamiYazdir2(List<Integer> list) {
         Integer toplam = list.stream().distinct().filter(Utils::ciftElemanlari).map(Utils::kareAl).reduce(Math::addExact).get();
-        //addExact==>toplama yapar
+
 
         System.out.println("toplam-2= " + toplam);
     }
@@ -99,12 +100,14 @@ public class Fp02 {
     public static void tekrarsizCiftElemanlarinKuplerininCarpimi(List<Integer> list) {
         int carpim = list.stream().distinct().filter(Utils::ciftElemanlari).map(Utils::kupAl).reduce(Math::multiplyExact).get();
         System.out.println("carpim = " + carpim);
+        //Math::multiplyExact ==> elemanlarin carpimini yapar
     }
 
     //7) List elemanları arasından en büyük değeri bulan bir method oluşturun.
     public static void getMaxEleman(List<Integer> list) {
         int max = list.stream().distinct().reduce(Math::max).get();
         System.out.println("max = " + max);
+        //Math::max ==> en buyuk elemani verir
     }
     //Ödev
     //8)List elemanları arasından en küçük değeri bulan bir method oluşturun.(Method Reference)
@@ -122,13 +125,14 @@ public class Fp02 {
     //10) Ters sıralama ile tekrarsız ve 5'ten büyük elemanların yarı değerlerini(elamanın ikiye bölüm sonucunu) bulan bir method oluşturun.
     public static void besdenBuyukYariDeger(List<Integer> list) {
         List<Double> listYaz=list.
-                stream().//Gerekli methodları kullanmamızı sağlar
-                        distinct().//Tekarlı olanları almaz
-                        filter(t-> t>5).//Koşula göre filtreleme yapar
-                        map(Utils::yarisiniAl).//Her bir elemanın değerini değiştirmeye yarar
-                        sorted(Comparator.reverseOrder()).//Sıralama yapar
-                        collect(Collectors.toList());//Elamanları collection'a çevirir.
+                stream().                                    //Gerekli methodları kullanmamızı sağlar
+                        distinct().                          //Tekarlı olanları almaz
+                        filter(t-> t>5).                     //Koşula göre filtreleme yapar
+                        map(Utils::yarisiniAl).              //Her bir elemanın değerini değiştirmeye yarar
+                        sorted(Comparator.reverseOrder()).   //Sıralama yapar
+                        collect(Collectors.toList());        //Elamanları collection'a çevirir.
         System.out.println("listYaz = " + listYaz);
     }
+
 
 }

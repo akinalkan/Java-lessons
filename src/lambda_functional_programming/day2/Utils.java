@@ -60,8 +60,6 @@ public class Utils {
         while (sayi>0){
             rakamlarToplami+=sayi%10;
             sayi/=10;
-
-
         }
         return rakamlarToplami;
     }
