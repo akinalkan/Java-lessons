@@ -43,3 +43,7 @@
 //.sum()==> toplama yapar[ range() methoduna bagli calisir]
 
 //getAsInt() ==> sonucu integer olarak alir
+
+//max(listelenen eleman ozellikleri)==> istenen en buyuk degerli elemani alir
+
+//skip(int x)==> x kadar elemani atlar
