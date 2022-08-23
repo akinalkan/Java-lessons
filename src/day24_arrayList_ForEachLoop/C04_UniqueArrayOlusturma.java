@@ -12,6 +12,8 @@ public class C04_UniqueArrayOlusturma {
         int[] uniqueArray=uniqueArrayOlustur(arr);
 
         System.out.println(Arrays.toString(uniqueArray));
+        System.out.println("*********************");
+        System.out.println(Utils24.arrayiListeCevir(arr));
     }
     public static int[] uniqueArrayOlustur(int[] arr) {
         Arrays.sort(arr);

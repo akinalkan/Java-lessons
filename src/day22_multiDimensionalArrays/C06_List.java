@@ -37,13 +37,13 @@ public class C06_List {
         int[] sayilar={1,2,3,41,4546,78,9,6,4,6,1,1321,1,41654};
         List<Integer> liste=new ArrayList<>();
 
-        for (int each:sayilar) {
+        for (int each:sayilar) {        //array'den list yapma
             liste.add(each);
 
         }
         System.out.println("liste = " + liste);
 
-        Integer[] arrnew=liste.toArray(new Integer[0]);
+        Integer[] arrnew=liste.toArray(new Integer[0]);     // list'den array yapma
         System.out.println("arrNew array : "+Arrays.toString(arrnew));
 
         String[] isimler2={"ali","Veli","Ayse"};

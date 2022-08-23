@@ -1,5 +1,8 @@
 package day21_Arrays;
 
+import java.util.Arrays;
+import java.util.Comparator;
+
 public class C02_EnUzunveKisaKelime {
     /*
     Soru 2- Verilen String bir array’de en uzun ve en kisa String’leri yazdiran bir method olusturun
@@ -8,6 +11,7 @@ public class C02_EnUzunveKisaKelime {
         String [] isimler={"Erdal","Onur","Mehmet","Hayrullah","Mihrican"};
 
         enUzunVeKisayiYazdir(isimler);
+        enUzunKelime(isimler);
 
     }
 
@@ -33,5 +37,10 @@ public class C02_EnUzunveKisaKelime {
 
 
 
+    }
+    //2.Yol Lambda  [method reference]
+    public static void enUzunKelime(String[] arr){
+        String str= Arrays.stream(arr).max(Comparator.comparing(String::length)).get();
+        System.out.println("En uzun kelime : "+str);
     }
 }

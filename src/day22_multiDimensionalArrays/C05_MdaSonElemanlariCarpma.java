@@ -1,5 +1,9 @@
 package day22_multiDimensionalArrays;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class C05_MdaSonElemanlariCarpma {
     public static void main(String[] args) {
         /*
@@ -46,5 +50,20 @@ public class C05_MdaSonElemanlariCarpma {
 
         }
         System.out.println("Tum elemanlarin carpimi : " + carpim1);
+        System.out.println("***********************************************************");
+
+        List<Integer>list=new ArrayList<>();
+        list.add(5);
+        list.add(10);
+        list.add(15);
+        list.add(20);
+        list.add(25);
+        list.add(30);
+        System.out.println("list = " + list);
+        limitIslemi(list);
     }
+    public static void limitIslemi(List<Integer> list){
+        System.out.println(list.stream().filter(t->t>20).limit(3).toList());
+    }
+
 }

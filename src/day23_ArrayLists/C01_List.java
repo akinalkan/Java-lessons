@@ -33,4 +33,5 @@ public class C01_List {
         Integer[] arr=sayilar1.toArray(new Integer[0]);//sayilar1 list'i arr arrayine cevirildi
         System.out.println("arr arrayi yazdirildi : "+Arrays.toString(arr));
     }
+
 }
