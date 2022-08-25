@@ -1,16 +1,25 @@
 package lambda_functional_programming.lambda_practice;
 
+import java.util.Arrays;
+
 public class Lambda03_Odev {//odev
 
         //TASK 01 --> Structured Programming ve Functional Programming ile 1'den x'e kadar
         // tamsayilari toplayan bir program create ediniz.
         //Structured(AMELE) Programming
         public static int toplaAmele(int i) {
+            int toplam=0;
+            for (int j = 1; j <=i ; j++) {
+                toplam+=j;
 
-            return 0;
+
+            }
+
+            return toplam;
         }
         //TODO Functional(cincix Programming
-        public static int toplaCincix(int x) {
+        public static int toplaCincix(int...x) {
+
 
             return 0;
         }
@@ -59,6 +68,11 @@ Eg : Input : {{Ali,Veli,Ayse},{Hasan,Can},{Suzan}}
 Output:[Ali, Ayse, Can, Hasan, Suzan, Veli]
 */
     String[][] arr = {{"Ali", "Veli", "Ayse"}, {"Hasan", "Can"}, {"Suzan"}};
+
+    public static void main(String[] args) {
+        System.out.println(toplaAmele(20));
+        System.out.println(toplaCincix(20));
+    }
 
     }
 
