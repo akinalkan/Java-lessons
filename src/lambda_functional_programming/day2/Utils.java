@@ -18,7 +18,7 @@ public class Utils {
     public static int kupAl(int x){
         return x*x*x;
     }
-    public static double karekokAl(double x){
+    public static double karekokAl(int x){
         return Math.sqrt(x);
     }
     public static Integer maxElemanArr(Integer[] arr){

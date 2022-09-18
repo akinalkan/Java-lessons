@@ -52,8 +52,8 @@ public class Fp02 {
     //1) Ardışık list elemanlarını aynı satırda aralarında boşluk bırakarak yazdıran bir method oluşturun.(Functional ve method reference)
     public static void listElemanlariniYazdirFunctional(List<Integer> list) {
         list.stream().forEach(Utils::print_);//Utils::print_  ==>public static void print_(Object str){
-        //System.out.print(str+" ");
-        // method'unu kullaniriz
+                                             //                     System.out.print(str+" ");
+                                             //                     method'unu kullaniriz
     }
     //2)Ardışık çift list elementlerini aynı satırda aralarında boşluk bırakarak yazdıran bir method oluşturun.(Functional)
 
@@ -126,7 +126,7 @@ public class Fp02 {
     public static void besdenBuyukYariDeger(List<Integer> list) {
         List<Double> listYaz=list.
                 stream().                                    //Gerekli methodları kullanmamızı sağlar
-                        distinct().                          //Tekarlı olanları almaz
+                        distinct().                          //Tekrarlı olanları almaz
                         filter(t-> t>5).                     //Koşula göre filtreleme yapar
                         map(Utils::yarisiniAl).              //Her bir elemanın değerini değiştirmeye yarar
                         sorted(Comparator.reverseOrder()).   //Sıralama yapar

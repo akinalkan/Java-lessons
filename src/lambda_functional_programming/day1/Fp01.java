@@ -24,34 +24,36 @@ public class Fp01 {
         liste.add(10);
         liste.add(2);
         liste.add(8);
-        System.err.println(liste);
+        // System.err.print(liste+" ");
+        System.out.println();
 
 
-        listElemanlariniYazdirStructured(liste);
-        System.out.println();
-        listElemanlariniYazdirFunctional(liste);
-        System.out.println();
-        ciftElemanlariYazdirStructured(liste);
-        System.out.println();
-        ciftElemanlariYazdirFunctional(liste);
-        System.out.println();
-        tekElemanlarinKareleriniYazdir(liste);
-        System.out.println();
-        tekrarsizTekElemanlarinKupunuYazdir(liste);
-        System.out.println();
-        tekrarsizCiftElemanlarinKareToplami(liste);
-        System.out.println();
-        ciftElemanlarinKuplerCarpimi(liste);
-        getMaxEleman01(liste);
-        getMaxEleman02(liste);
-        getYedidenBuyukCiftMin(liste);
-        minValue(liste);
-        System.out.println();
-        minValue2(liste);
-        minValue3(liste);
-        getYedidenBuyukCiftMin2(liste);
-        getYedidenBuyukCiftMin3(liste);
-        getTersSiralamaTekrarsizElemanlarinYarisi(liste);
+        // listElemanlariniYazdirStructured(liste);
+        // System.out.println();
+        // listElemanlariniYazdirFunctional(liste);
+        // System.out.println();
+        // ciftElemanlariYazdirStructured(liste);
+        // System.out.println();
+        // ciftElemanlariYazdirFunctional(liste);
+        // System.out.println();
+        // tekElemanlarinKareleriniYazdir(liste);
+        // System.out.println();
+        // tekrarsizTekElemanlarinKupunuYazdir(liste);
+        // System.out.println();
+        //tekrarsizCiftElemanlarinKareToplami(liste);
+        //System.out.println();
+        // ciftElemanlarinKuplerCarpimi(liste);
+        // getMaxEleman01(liste);
+        // getMaxEleman02(liste);
+        // getYedidenBuyukCiftMin(liste);
+        // minValue(liste);
+        // System.out.println();
+        // minValue2(liste);
+        // minValue3(liste);
+        // getYedidenBuyukCiftMin2(liste);
+        // getYedidenBuyukCiftMin3(liste);
+        // getTersSiralamaTekrarsizElemanlarinYarisi(liste);
+
     }
 
     //1) Java ile, Ardışık list elementlerini aynı satırda aralarında boşluk bırakarak yazdıran bir method oluşturun.(Structured)
@@ -65,7 +67,9 @@ public class Fp01 {
 
     //1) Lambda ile, Ardışık list elementlerini aynı satırda aralarında boşluk bırakarak yazdıran bir method oluşturun.(Functional)
     public static void listElemanlariniYazdirFunctional(List<Integer> list) {
-        list.stream().forEach(t -> System.out.print(t + " "));
+        list.forEach(t -> System.out.print(t + " "));
+        //list.forEach(System.out::print);//891311091028
+
         // stream() methodu collection'dan elementleri dahil etmek için ve methodlara ulaşmak için kullanilir.
     }
 
@@ -87,7 +91,7 @@ public class Fp01 {
     //3) Lambda ile, Ardışık tek list elemanlarının karelerini aynı satırda aralarında boşluk bırakarak yazdıran bir method oluşturun.(Functional)
     public static void tekElemanlarinKareleriniYazdir(List<Integer> list) {
         list.stream().filter(t -> t % 2 != 0).map(t -> t * t).forEach(t -> System.out.print(t + " "));
-        //.map(t->t*t)==>t'leri t*t 'ler le degistirir
+        //.map(t->t*t)==>t'leri t*t 'ler le degistirir.[map burada donustur demektir.]
         // listedeki değerler değişecekse map methodu kullanılır.
     }
 
@@ -99,8 +103,8 @@ public class Fp01 {
 
     //5) Lambda ile, Tekrarsız çift elemanların karelerinin toplamını hesaplayan bir method oluşturun.
     public static void tekrarsizCiftElemanlarinKareToplami(List<Integer> list) {
-        Integer toplam = list.stream().distinct().filter(t -> t % 2 == 0).map(t -> t * t).reduce(0, (t, u) -> t + u);
-        //reduce(0,(t,u)->t+u)==>t=0 baslangic degerini alir ona u lari ekler
+        int toplam = list.stream().distinct().filter(t -> t % 2 == 0).map(t -> t * t).reduce(0, (t, u) -> t + u);
+        //reduce(0,(t,u)->t+u)==>t=0 baslangic degerini alir ona u'lari ekler
         //image (14).png
         System.out.print(toplam);
         // Toplama dediğimiz için 0 koyduk, Çarpma olsaydı 1 koyacaktık.
@@ -115,7 +119,7 @@ public class Fp01 {
     //7) List elemanları arasından en büyük değeri bulan bir method oluşturun.
     //1.Yol:
     public static void getMaxEleman01(List<Integer> list) {
-        int max = list.stream().distinct().reduce(Integer.MIN_VALUE, (t, u) -> t > u ? t : u);
+        int max = list.stream().distinct().reduce(Integer.MIN_VALUE,(t,u)->t>u ? t:u);
         System.out.println(max);
 
 
@@ -123,7 +127,7 @@ public class Fp01 {
 
     // 2.Yol:
     public static void getMaxEleman02(List<Integer> list) {
-        Integer max = list.stream().distinct().sorted().reduce(Integer.MIN_VALUE, (t, u) -> u);
+      Integer max=list.stream().distinct().sorted().reduce(Integer.MIN_VALUE,(t,u)->u);
         System.out.println("max : " + max);
     }
 
@@ -134,16 +138,18 @@ public class Fp01 {
         Integer min = list.stream().distinct().reduce(list.get(0), (t, u) -> t < u ? t : u);
         System.out.print("Ödev_min = " + min);
     }
-    public static void minValue2(List<Integer> list){
-        int min=list.stream().distinct().sorted().findFirst().get();
+
+    public static void minValue2(List<Integer> list) {
+        int min = list.stream().distinct().sorted().findFirst().get();
         System.out.println("Ödev_min-2.Yol = " + min);
     }
-    public static void minValue3(List<Integer>list){
-        int min= list.get(0);
-        for (Integer w:list) {
-                    if(w<min){
-                        min=w;
-                    }
+
+    public static void minValue3(List<Integer> list) {
+        int min = list.get(0);
+        for (Integer w : list) {
+            if (w < min) {
+                min = w;
+            }
         }
         System.out.println("Ödev_min-3.Yol = " + min);
     }
@@ -152,12 +158,7 @@ public class Fp01 {
     //9) List elemanları arasından 7'den büyük, çift, en küçük değeri bulan bir method oluşturun.
     //1.Yol:
     public static void getYedidenBuyukCiftMin(List<Integer> list) {
-        int min = list.
-                stream().
-                distinct().
-                filter(t -> t % 2 == 0).
-                filter(t -> t > 7).
-                reduce(Integer.MAX_VALUE, (t, u) -> t < u ? t : u);
+        int min = list.stream().distinct().filter(t->t%2==0).filter(t->t>7).reduce(Integer.MAX_VALUE,(t,u)->t<u ? t:u);
         System.out.println("min = " + min);
     }
 
@@ -171,14 +172,15 @@ public class Fp01 {
                 sorted(Comparator.reverseOrder()).
                 reduce(Integer.MAX_VALUE, (t, u) -> u);
         System.out.println("min = " + min);
-        //Comparator.reverseOrder()==>terstern siralam yapar[String'de olmaz ama StringBuilder'da kullanilir]
+        //Comparator.reverseOrder()==>tersten siralama yapar[String'de olmaz ama StringBuilder'da kullanilir]
     }
+
     // 3.Yol:
     public static void getYedidenBuyukCiftMin3(List<Integer> list) {
-        int min=list.
+        int min = list.
                 stream().
                 distinct().
-                filter(t->t%2==0).
+                filter(t -> t % 2 == 0).
                 filter(t -> t > 7).
                 sorted().
                 findFirst().get();
@@ -188,8 +190,8 @@ public class Fp01 {
     }
     //10) Ters sıralama ile tekrarsız ve 5'ten büyük elemanların yarı değerlerini(elamanın ikiye bölüm sonucunu) bulan bir method oluşturun.
 
-    public  static void getTersSiralamaTekrarsizElemanlarinYarisi(List<Integer>list){
-        List<Double> list2= list.stream().distinct().filter(t -> t > 5).map(t -> t / 2.0).sorted(Comparator.reverseOrder()).toList();
+    public static void getTersSiralamaTekrarsizElemanlarinYarisi(List<Integer> list) {
+        List<Double> list2 = list.stream().distinct().filter(t -> t > 5).map(t -> t / 2.0).sorted(Comparator.reverseOrder()).toList();
 
         System.out.println("list2 = " + list2);
     }
